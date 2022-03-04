@@ -1,0 +1,873 @@
+fileFormatVersion: 2
+guid: ed576a9056762c941b27c28701ac17c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -593080543961407992
+    second: Paisajes1_0
+  - first:
+      213: 6249818965735363467
+    second: Paisajes1_1
+  - first:
+      213: 8209908013803345888
+    second: Paisajes1_2
+  - first:
+      213: 651665707169554229
+    second: Paisajes1_3
+  - first:
+      213: -3039727017924200396
+    second: Paisajes1_4
+  - first:
+      213: 505622461959374599
+    second: Paisajes1_5
+  - first:
+      213: 6348717732324826235
+    second: Paisajes1_6
+  - first:
+      213: 7636124246354517588
+    second: Paisajes1_7
+  - first:
+      213: -2613508459724101941
+    second: Paisajes1_8
+  - first:
+      213: 4736435759502152522
+    second: Paisajes1_9
+  - first:
+      213: 1121330001260933366
+    second: Paisajes1_10
+  - first:
+      213: -1104478605011226142
+    second: Paisajes1_11
+  - first:
+      213: -181742469981114937
+    second: Paisajes1_12
+  - first:
+      213: 6434623682877350692
+    second: Paisajes1_13
+  - first:
+      213: 3436630850495732710
+    second: Paisajes1_14
+  - first:
+      213: 5873320633870631539
+    second: Paisajes1_15
+  - first:
+      213: 4627320531350995649
+    second: Paisajes1_16
+  - first:
+      213: -7741836846754229966
+    second: Paisajes1_17
+  - first:
+      213: 1730042477552387246
+    second: Paisajes1_18
+  - first:
+      213: 1640713298488823788
+    second: Paisajes1_19
+  - first:
+      213: 2921650822939600697
+    second: Paisajes1_20
+  - first:
+      213: 3356253546751334349
+    second: Paisajes1_21
+  - first:
+      213: -5190141747656331245
+    second: Paisajes1_22
+  - first:
+      213: -4258613200933119217
+    second: Paisajes1_23
+  - first:
+      213: 2412623288280015595
+    second: Paisajes1_24
+  - first:
+      213: 6671816151391403233
+    second: Paisajes1_25
+  - first:
+      213: 6237830612222246333
+    second: Paisajes1_26
+  - first:
+      213: -3987047628798144821
+    second: Paisajes1_27
+  - first:
+      213: 8348016738904778564
+    second: Paisajes1_28
+  - first:
+      213: 7856045983694339212
+    second: Paisajes1_29
+  - first:
+      213: -7289529064880340224
+    second: Paisajes1_30
+  - first:
+      213: 5587862977386417207
+    second: Paisajes1_31
+  - first:
+      213: 2846852964835802665
+    second: Paisajes1_32
+  - first:
+      213: -4254816750941667398
+    second: Paisajes1_33
+  - first:
+      213: -936387089204133544
+    second: Paisajes1_34
+  - first:
+      213: 7066263838319295668
+    second: Paisajes1_35
+  - first:
+      213: 8417722600042219757
+    second: Paisajes1_36
+  - first:
+      213: -6044413082616532434
+    second: Paisajes1_37
+  - first:
+      213: -2699251466702323408
+    second: Paisajes1_38
+  - first:
+      213: -6075629076618722837
+    second: Paisajes1_39
+  - first:
+      213: 2981000037702796611
+    second: Paisajes1_40
+  - first:
+      213: 5853660456604514303
+    second: Paisajes1_41
+  - first:
+      213: -1501781508261403339
+    second: Paisajes1_42
+  - first:
+      213: -2034359239942328441
+    second: Paisajes1_43
+  - first:
+      213: 1708061455569129627
+    second: Paisajes1_44
+  - first:
+      213: -8359379104012934579
+    second: Paisajes1_45
+  - first:
+      213: 4065960962730884769
+    second: Paisajes1_46
+  - first:
+      213: -491181966203054547
+    second: Paisajes1_47
+  - first:
+      213: 784000694179531999
+    second: Paisajes1_48
+  - first:
+      213: -8595467691141203375
+    second: Paisajes1_49
+  - first:
+      213: -5187808878599848015
+    second: Paisajes1_50
+  - first:
+      213: -3725992922809479543
+    second: Paisajes1_51
+  - first:
+      213: 6282142913859703641
+    second: Paisajes1_52
+  - first:
+      213: -6113928429159489952
+    second: Paisajes1_53
+  - first:
+      213: 1895940879110487182
+    second: Paisajes1_54
+  - first:
+      213: 2439869358924249476
+    second: Paisajes1_55
+  - first:
+      213: -4018103525005130200
+    second: Paisajes1_56
+  - first:
+      213: -8854924582631478578
+    second: Paisajes1_57
+  - first:
+      213: -7498074126635330217
+    second: Paisajes1_58
+  - first:
+      213: -2868473003721397607
+    second: Paisajes1_59
+  - first:
+      213: -7652837800277736561
+    second: Paisajes1_60
+  - first:
+      213: 3688926518550722109
+    second: Paisajes1_61
+  - first:
+      213: -5503064966674553004
+    second: Paisajes1_62
+  - first:
+      213: 391496577530014348
+    second: Paisajes1_63
+  - first:
+      213: 8308534070402601608
+    second: Paisajes1_64
+  - first:
+      213: -7501991855692681480
+    second: Paisajes1_65
+  - first:
+      213: -8512403662550722419
+    second: Paisajes1_66
+  - first:
+      213: 4885658399485193088
+    second: Paisajes1_67
+  - first:
+      213: -8614720427462811844
+    second: Paisajes1_68
+  - first:
+      213: 8578049475798747800
+    second: Paisajes1_69
+  - first:
+      213: 3462123023952370585
+    second: Paisajes1_70
+  - first:
+      213: 5837845090038521277
+    second: Paisajes1_71
+  - first:
+      213: 8750843858667859469
+    second: Paisajes1_72
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Paisajes1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 151
+        width: 62
+        height: 101
+      alignment: 9
+      pivot: {x: 0.47787085, y: 0.085681275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e1cf53364f4c7f0800000000000000
+      internalID: -593080543961407992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 151
+        width: 62
+        height: 101
+      alignment: 9
+      pivot: {x: 0.48672238, y: 0.07617233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83d7238c31dbb650800000000000000
+      internalID: 6249818965735363467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4387872e168b0d5d0800000000000000
+      internalID: -3039727017924200396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7070c8343f4540700800000000000000
+      internalID: 505622461959374599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cd17ef32d2b1850800000000000000
+      internalID: 6348717732324826235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb52fbec8d51bf20800000000000000
+      internalID: 3436630850495732710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372c4d19ff9328150800000000000000
+      internalID: 5873320633870631539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c24c05b18b873040800000000000000
+      internalID: 4627320531350995649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2e3ca191c5b7120800000000000000
+      internalID: 2412623288280015595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecf56ed07d079c50800000000000000
+      internalID: 6671816151391403233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd709274e9319650800000000000000
+      internalID: 6237830612222246333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de84b411b12c1d470800000000000000
+      internalID: 8417722600042219757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_37
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22fae6735eed1ca0800000000000000
+      internalID: -6044413082616532434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03181cf97155a8ad0800000000000000
+      internalID: -2699251466702323408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36fbb4bf13b13330800000000000000
+      internalID: 3688926518550722109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_62
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457677db19f21a3b0800000000000000
+      internalID: -5503064966674553004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a25722010ee6500800000000000000
+      internalID: 391496577530014348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882d39e67b7dd4370800000000000000
+      internalID: 8308534070402601608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe609d872293e790800000000000000
+      internalID: -7501991855692681480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d881ee438fdddd980800000000000000
+      internalID: -8512403662550722419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08be733dd685dc340800000000000000
+      internalID: 4885658399485193088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f17c9f96d527880800000000000000
+      internalID: -8614720427462811844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ac5bebc8a5b0770800000000000000
+      internalID: 8578049475798747800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bd1631c8eeb0030800000000000000
+      internalID: 3462123023952370585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd118ddd21340150800000000000000
+      internalID: 5837845090038521277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paisajes1_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e6ec0202e317970800000000000000
+      internalID: 8750843858667859469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
