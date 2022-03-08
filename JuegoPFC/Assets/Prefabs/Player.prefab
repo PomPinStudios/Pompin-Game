@@ -125,7 +125,7 @@ MonoBehaviour:
   body: {fileID: 883887800864114373}
   spriteRenderer: {fileID: 883887800864114424}
   animator: {fileID: 0}
-  walkSpeed: 5
+  walkSpeed: 7
 --- !u!114 &883887800864114375
 MonoBehaviour:
   m_ObjectHideFlags: 0
