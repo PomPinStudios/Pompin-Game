@@ -13,6 +13,14 @@ public class TopDownController : MonoBehaviour
     private float horizontal;
     private float vertical;
 
+//Dash
+    public float dashSpeed;
+    public float dashCooldown;
+    private float runningDashCooldown;
+    public float dashDuration;
+    private float runningDashDuration;
+    private bool dashUp;
+
     Vector2 direction;
 
     // Start is called before the first frame update
@@ -44,6 +52,28 @@ public class TopDownController : MonoBehaviour
     {
         direction = new Vector2(horizontal, vertical).normalized;
         body.velocity = direction * walkSpeed;
+
+        //Dash
+        //Establece la duracion del dash
+        if (runningDashDuration > 0)
+        {
+            runningDashDuration -= Time.deltaTime;
+            body.velocity = direction * dashSpeed;
+        }
+        //Establece el cooldown del dash
+        if (runningDashCooldown > 0)
+        {
+            runningDashCooldown -= Time.deltaTime;
+        } else {
+            dashUp = true;
+        }
+        //Activa la duracion del dash si el cooldown ha acabado
+        if (Input.GetAxis("Dash") == 1 && dashUp)
+        {
+            runningDashCooldown = dashCooldown;
+            runningDashDuration = dashDuration;
+            dashUp = false;
+        }
     }
 
     private void SetXYAnimator()

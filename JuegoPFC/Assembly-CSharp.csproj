@@ -37,9 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerInput.cs" />
-     <Compile Include="Assets\Scripts\TopDownController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\TopDownController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -608,100 +608,100 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>D:\Proyectos Unity\PompinPFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>C:\Users\Ander\OneDrive\Documentos\PFC\Pompin-Game\JuegoPFC\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

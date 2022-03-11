@@ -82074,6 +82074,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 883887800864114372, guid: 3987aa9a69a432044a39bdffbff9b7b9, type: 3}
+      propertyPath: dashSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 883887800864114372, guid: 3987aa9a69a432044a39bdffbff9b7b9, type: 3}
+      propertyPath: dashCooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 883887800864114372, guid: 3987aa9a69a432044a39bdffbff9b7b9, type: 3}
+      propertyPath: dashDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 883887800864114374, guid: 3987aa9a69a432044a39bdffbff9b7b9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -82118,6 +82130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883887800864114424, guid: 3987aa9a69a432044a39bdffbff9b7b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1292221266176200017, guid: 35ce999e9a392754a821642efd6a28ee, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3987aa9a69a432044a39bdffbff9b7b9, type: 3}
 --- !u!1001 &5749405816915858923
