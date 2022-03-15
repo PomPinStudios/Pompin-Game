@@ -8,7 +8,6 @@ public class TopDownController : MonoBehaviour
     public Rigidbody2D body;
     public SpriteRenderer spriteRenderer;
     public Animator animator;
-
     public float walkSpeed;
     private float horizontal;
     private float vertical;
@@ -23,11 +22,16 @@ public class TopDownController : MonoBehaviour
 
     Vector2 direction;
 
+//Attack
+    public int damage;
+    private Attacker attacker;
+
     // Start is called before the first frame update
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
         animator = GetComponent<Animator>();
+        attacker = GetComponent<Attacker>();
     }
 
     // Update is called once per frame
@@ -45,6 +49,12 @@ public class TopDownController : MonoBehaviour
         else
         {
             animator.SetBool("Running", false);
+        }
+
+        //Attack
+        if(Input.GetButtonDown("Fire1"))
+        {
+            attacker.Attack(playerInput.lookDirection, damage);
         }
     }
 
