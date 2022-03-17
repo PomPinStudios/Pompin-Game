@@ -8,16 +8,19 @@ public class PlayerStats : MonoBehaviour
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Slider healthSlider;
+    [SerializeField] private Text healthText;
 
     private void Start()
     {
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
+        healthText.text = health.ToString() + " / 100";
     }
 
     public void UpdateHealth(float mod)
     {
         health += mod;
+        healthText.text = health.ToString() + " / 100";
 
         if (health > maxHealth)
         {
@@ -27,6 +30,7 @@ public class PlayerStats : MonoBehaviour
         {
             health = 0f;
             healthSlider.value = health;
+            healthText.text = "0 / 100";
             Destroy(gameObject);
             Debug.Log("Tas muerto");
         }
