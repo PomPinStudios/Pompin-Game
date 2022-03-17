@@ -12,7 +12,7 @@ public class TopDownController : MonoBehaviour
     private float horizontal;
     private float vertical;
 
-//Dash
+    //Dash
     public float dashSpeed;
     public float dashCooldown;
     private float runningDashCooldown;
@@ -22,7 +22,7 @@ public class TopDownController : MonoBehaviour
 
     Vector2 direction;
 
-//Attack
+    //Attack
     public int damage;
     private Attacker attacker;
 
@@ -52,7 +52,7 @@ public class TopDownController : MonoBehaviour
         }
 
         //Attack
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             attacker.Attack(playerInput.lookDirection, damage);
         }
@@ -74,7 +74,9 @@ public class TopDownController : MonoBehaviour
         if (runningDashCooldown > 0)
         {
             runningDashCooldown -= Time.deltaTime;
-        } else {
+        }
+        else
+        {
             dashUp = true;
         }
         //Activa la duracion del dash si el cooldown ha acabado
