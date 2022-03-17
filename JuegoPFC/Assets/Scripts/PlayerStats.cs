@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private Slider healthSlider;
 
     private void Start()
     {
         health = maxHealth;
+        healthSlider.maxValue = maxHealth;
     }
 
     public void UpdateHealth(float mod)
@@ -23,7 +26,16 @@ public class PlayerStats : MonoBehaviour
         else if (health <= 0f)
         {
             health = 0f;
+            healthSlider.value = health;
+            Destroy(gameObject);
             Debug.Log("Tas muerto");
         }
     }
+
+    void OnGUI()
+    {
+        float t = Time.deltaTime / 0.5f;
+        healthSlider.value = Mathf.Lerp(healthSlider.value, health, t);
+    }
 }
+
