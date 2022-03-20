@@ -55,6 +55,7 @@ public class TopDownController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             attacker.Attack(playerInput.lookDirection, damage);
+            animator.SetTrigger("Attack");
         }
     }
 
