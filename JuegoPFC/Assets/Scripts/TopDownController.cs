@@ -54,8 +54,8 @@ public class TopDownController : MonoBehaviour
         //Attack
         if (Input.GetButtonDown("Fire1"))
         {
-            attacker.Attack(playerInput.lookDirection, damage);
-            animator.SetTrigger("Attack");
+            
+            animator.SetBool("Attacking", true);
         }
     }
 
@@ -93,5 +93,11 @@ public class TopDownController : MonoBehaviour
     {
         animator.SetFloat("X", horizontal);
         animator.SetFloat("Y", vertical);
+    }
+
+    void AttackController()
+    {   
+        attacker.Attack(playerInput.lookDirection, damage);
+        animator.SetBool("Attacking", false);
     }
 }
