@@ -51,6 +51,7 @@ public class ArrowController : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 rb.isKinematic = true;
                 gameObject.layer = 8;
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
                 Destroy(gameObject, 15f);
             }
@@ -102,6 +103,11 @@ public class ArrowController : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag =="Player")
+        {
+            gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+
+        }
         if(other.gameObject.tag == "Enemy"){
             GameObject attackedObject = other.gameObject;
             if (attackedObject.tag == "Enemy")

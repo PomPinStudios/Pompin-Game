@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyStats.cs" />
      <Compile Include="Assets\Scripts\TopDownController.cs" />
+     <Compile Include="Assets\Scripts\Combat\Bow\BowCharger.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Herramientas\UNITY\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
