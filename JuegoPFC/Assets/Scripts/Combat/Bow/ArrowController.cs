@@ -80,7 +80,7 @@ public class ArrowController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag != "Arrow")
+        if(other.tag != "Arrow" && other.tag != "Enemy")
         {
             hasHit = true; 
             rb.velocity = Vector2.zero;
@@ -99,5 +99,25 @@ public class ArrowController : MonoBehaviour
         {
             touchingArrow = false;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Enemy"){
+            GameObject attackedObject = other.gameObject;
+            if (attackedObject.tag == "Enemy")
+            {
+                attackedObject.GetComponent<EnemyStats>().takeDamage(25);
+            }
+            Destroy(gameObject);
+        }
+        else
+        {
+            hasHit = true; 
+            rb.velocity = Vector2.zero;
+            rb.isKinematic = true;
+            rb.freezeRotation = true;
+            Destroy(gameObject, 15f);
+        }
+        
     }
 }
