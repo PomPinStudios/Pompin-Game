@@ -1,0 +1,540 @@
+fileFormatVersion: 2
+guid: e66ae979fb0a50040a609554d3499fb6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5955643652872106936
+    second: CosasArboles_0
+  - first:
+      213: -9106608473625200068
+    second: CosasArboles_1
+  - first:
+      213: -1651634925662941008
+    second: CosasArboles_2
+  - first:
+      213: -8926257440146960672
+    second: CosasArboles_3
+  - first:
+      213: 1855670659254607331
+    second: CosasArboles_4
+  - first:
+      213: -2748030054921530418
+    second: CosasArboles_5
+  - first:
+      213: 7972029597937646829
+    second: CosasArboles_6
+  - first:
+      213: 5869694804996742483
+    second: CosasArboles_7
+  - first:
+      213: 3913219879782566020
+    second: CosasArboles_8
+  - first:
+      213: -8076070495905985901
+    second: CosasArboles_9
+  - first:
+      213: 8598944811517326265
+    second: CosasArboles_10
+  - first:
+      213: -6818509396370490015
+    second: CosasArboles_11
+  - first:
+      213: 6996916857572343995
+    second: CosasArboles_12
+  - first:
+      213: 6012378025928754663
+    second: CosasArboles_13
+  - first:
+      213: -493147738417532781
+    second: CosasArboles_14
+  - first:
+      213: -5525506250619128689
+    second: CosasArboles_15
+  - first:
+      213: 7751893992296170245
+    second: CosasArboles_16
+  - first:
+      213: 2751553762374211204
+    second: CosasArboles_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CosasArboles_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 387
+        width: 62
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c8fbde6ad495da0800000000000000
+      internalID: -5955643652872106936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 477
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3af10597d3de9180800000000000000
+      internalID: -9106608473625200068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 279
+        width: 62
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b05b3d29c63419e0800000000000000
+      internalID: -1651634925662941008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 354
+        width: 111
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee4a5ac6209f1480800000000000000
+      internalID: -8926257440146960672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 350
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed5cf002aaa0c910800000000000000
+      internalID: 1855670659254607331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 358
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec31e4889390dd9d0800000000000000
+      internalID: -2748030054921530418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_6
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 358
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec39f38ea652ae60800000000000000
+      internalID: 7972029597937646829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 360
+        width: 111
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d59cf7358557150800000000000000
+      internalID: 5869694804996742483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 356
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488cf6e5fbc8e4630800000000000000
+      internalID: 3913219879782566020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac28e3ca80cef80800000000000000
+      internalID: -8076070495905985901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_10
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3bda53fb6955770800000000000000
+      internalID: 8598944811517326265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d7cab74d9cf51a0800000000000000
+      internalID: -6818509396370490015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_12
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0ca8a8fca0a1160800000000000000
+      internalID: 6996916857572343995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e509daa5f1407350800000000000000
+      internalID: 6012378025928754663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 350
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390f5d5aebcf729f0800000000000000
+      internalID: -493147738417532781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_15
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 280
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8475a727557153b0800000000000000
+      internalID: -5525506250619128689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 284
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5034c43c382449b60800000000000000
+      internalID: 7751893992296170245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasArboles_17
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 194
+        width: 111
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48654ba819b7f2620800000000000000
+      internalID: 2751553762374211204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

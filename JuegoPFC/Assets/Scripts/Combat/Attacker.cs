@@ -13,6 +13,7 @@ public class Attacker : MonoBehaviour
     private Collider2D[] ataqueColliders = new Collider2D[12];
     private ContactFilter2D attackFilter;
     public LayerMask attackLayer;
+    private bool changed = false;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class Attacker : MonoBehaviour
     public void Attack(Vector2 attackDirection, int damage)
     {
         crearHitbox(attackDirection);
+        Debug.Log("attackDirectionX: " + attackDirection.x + "attackDirectionY: " + attackDirection.y);
         GameObject attackedObject;
         //Nos va a comprobar si una colision esta dentro de los puntos que le hemos pasado como parametro
         int elemenentosAtacados = Physics2D.OverlapArea(attackStart, attackEnd, attackFilter, ataqueColliders);
@@ -50,11 +52,29 @@ public class Attacker : MonoBehaviour
     private void crearHitbox(Vector2 attackDirection)
     {
         Vector2 escale = transform.lossyScale;
+
+        if ((attackDirection.x == 1 && attackDirection.y == 0) || (attackDirection.x == -1 && attackDirection.y == 0))
+        {
+            float x = hitBox.x;
+            float y = hitBox.y;
+            hitBox.x = y;
+            hitBox.y = x;
+            changed = true;
+        }
         Vector2 escaledHitbox = Vector2.Scale(hitBox, escale);
 
         vectorAttackGap = Vector2.Scale(attackDirection.normalized * gap, escale);
 
         attackStart = (Vector2)transform.position + vectorAttackGap - escaledHitbox * 0.5f;
         attackEnd = attackStart + escaledHitbox;
+
+        if (changed)
+        {
+            float x = hitBox.x;
+            float y = hitBox.y;
+            hitBox.x = y;
+            hitBox.y = x;
+            changed = false;
+        }
     }
 }

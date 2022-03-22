@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float attackSpeed = 1f;
     private float canAttack;
-    private Transform target;
+    public Transform target;
 
     void Update()
     {

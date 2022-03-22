@@ -21,31 +21,32 @@ public class ArrowController : MonoBehaviour
 
         //Posicion real del punto de mira respecto al player
         float realPosition = crossHair.transform.position.x - player.transform.position.x;
-        if(realPosition > 0)
+        if (realPosition > 0)
         {
             crossHairX = crossHair.transform.position.x;
             isPositive = true;
-        }else
+        }
+        else
         {
             crossHairX = crossHair.transform.position.x * -1;
             isPositive = false;
         }
 
-        arrowCountText = GameObject.Find ("Canvas/ArrowsCount").GetComponent<Text>();
+        arrowCountText = GameObject.Find("Canvas/ArrowsCount").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(hasHit == false)
+        if (hasHit == false)
         {
             float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-        if(isPositive == false)
+        if (isPositive == false)
         {
-            if(crossHairX < transform.position.x * -1)
+            if (crossHairX < transform.position.x * -1)
             {
                 hasHit = true;
                 rb.velocity = Vector2.zero;
@@ -58,7 +59,7 @@ public class ArrowController : MonoBehaviour
         }
         else
         {
-            if(crossHairX < transform.position.x)
+            if (crossHairX < transform.position.x)
             {
                 hasHit = true;
                 rb.velocity = Vector2.zero;
@@ -70,9 +71,10 @@ public class ArrowController : MonoBehaviour
         }
 
 
-        if(touchingArrow)
+        if (touchingArrow)
         {
-            if(Input.GetButton("Interactive")){
+            if (Input.GetButton("Interactive"))
+            {
                 AimShootBow.playerArrows += 1;
                 arrowCountText.text = "x " + AimShootBow.playerArrows.ToString();
                 Destroy(gameObject);
@@ -80,35 +82,39 @@ public class ArrowController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag != "Arrow" && other.tag != "Enemy")
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag != "Arrow" && other.tag != "Enemy")
         {
-            hasHit = true; 
+            hasHit = true;
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
             Destroy(gameObject, 15f);
         }
 
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             touchingArrow = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             touchingArrow = false;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag =="Player")
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
         {
             gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 
         }
-        if(other.gameObject.tag == "Enemy"){
+        if (other.gameObject.tag == "Enemy")
+        {
             GameObject attackedObject = other.gameObject;
             if (attackedObject.tag == "Enemy")
             {
@@ -118,12 +124,16 @@ public class ArrowController : MonoBehaviour
         }
         else
         {
-            hasHit = true; 
+            hasHit = true;
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
             rb.freezeRotation = true;
             Destroy(gameObject, 15f);
         }
-        
+
+        if (other.gameObject.tag == "Player")
+        {
+            touchingArrow = true;
+        }
     }
 }
