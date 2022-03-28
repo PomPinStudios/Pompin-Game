@@ -89400,6 +89400,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6227802652236644200, guid: 8c227698ad642444e90cf072c639e569, type: 3}
+      propertyPath: dropItem
+      value: 
+      objectReference: {fileID: 4012086532850380083, guid: 041718c1a9c7f9340bc974f0400e845c, type: 3}
+    - target: {fileID: 6227802652236644200, guid: 8c227698ad642444e90cf072c639e569, type: 3}
       propertyPath: maxHealth
       value: 50
       objectReference: {fileID: 0}

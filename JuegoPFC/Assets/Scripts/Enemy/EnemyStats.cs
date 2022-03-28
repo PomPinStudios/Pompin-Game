@@ -8,6 +8,11 @@ public class EnemyStats : MonoBehaviour
     private float health;
     [SerializeField] private float maxHealth;
     public EnemyHealthbar healthBar;
+    public GameObject dropItem;
+    public int dropCount = 5;
+    //Expansion de los objetos
+    public float spread = 1f;
+
 
     void Start()
     {
@@ -22,6 +27,15 @@ public class EnemyStats : MonoBehaviour
 
         if (health <= 0)
         {
+            while(dropCount > 0)
+            {
+                dropCount -= 1;
+                Vector3 position = transform.position;
+                position.x += spread * UnityEngine.Random.value - spread / 2;
+                position.y += spread * UnityEngine.Random.value - spread / 2;
+                GameObject drop = Instantiate(dropItem);
+                drop.transform.position = position;
+            }
             Destroy(gameObject);
         }
     }

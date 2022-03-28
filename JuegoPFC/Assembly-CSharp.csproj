@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Combat\Bow\CrossHairController.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopManager.cs" />
      <Compile Include="Assets\Scripts\Combat\Bow\AimShootBow.cs" />
      <Compile Include="Assets\Scripts\Combat\Attacker.cs" />
      <Compile Include="Assets\Scripts\Combat\Bow\ArrowForce.cs" />
@@ -50,11 +51,11 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Shop\ButtonInfo.cs" />
+     <Compile Include="Assets\Scripts\Shop\CloseShopPanel.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyStats.cs" />
      <Compile Include="Assets\Scripts\TopDownController.cs" />
-     <Compile Include="Assets\Scripts\Shop\CloseShopPanel.cs" />
-     <Compile Include="Assets\Scripts\Shop\ButtonInfo.cs" />
-     <Compile Include="Assets\Scripts\Shop\ShopManager.cs" />
+     <Compile Include="Assets\Scripts\PickUpItem.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Herramientas\UNITY\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
