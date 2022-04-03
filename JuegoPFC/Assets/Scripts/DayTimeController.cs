@@ -10,7 +10,7 @@ public class DayTimeController : MonoBehaviour
     public Color nightLightColor;
     public Color dayLightColor = Color.white;
     public  AnimationCurve nightTimeCurve; 
-    float time;
+    public float time;
     public float timeScale = 60f;
     public Text textTime;
     public Light2D globalLigth;
