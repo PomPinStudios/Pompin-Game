@@ -45,11 +45,11 @@ TagManager:
   - name: Suelo
     uniqueID: 4152038065
     locked: 0
-  - name: Player
-    uniqueID: 3193909087
-    locked: 0
   - name: Entorno
     uniqueID: 3868462683
+    locked: 0
+  - name: Player
+    uniqueID: 3193909087
     locked: 0
   - name: Default
     uniqueID: 0
