@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     public float health = 0f;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Slider healthSlider;
-    [SerializeField] private Text healthText;
+    public Text healthText;
 
     private void Start()
     {
@@ -16,6 +16,7 @@ public class PlayerStats : MonoBehaviour
         healthSlider.maxValue = maxHealth;
         healthText.text = health.ToString() + " / 100";
     }
+
 
     public void UpdateHealth(float mod)
     {

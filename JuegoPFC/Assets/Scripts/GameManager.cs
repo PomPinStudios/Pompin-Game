@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public Transform playerSpawnPoint;
     public GameObject player;
+    public ScreenTint screenTint;
+    public DayTimeController timeController;
     private static GameManager _instance;
     public static GameManager instance { get { return _instance; } }
 

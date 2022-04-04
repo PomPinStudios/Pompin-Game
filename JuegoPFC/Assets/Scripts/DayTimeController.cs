@@ -14,6 +14,7 @@ public class DayTimeController : MonoBehaviour
     public float timeScale = 60f;
     public Text textTime;
     public Light2D globalLigth;
+    public float morningTime = 28800f;
     float Hours 
     {
         get { return time /  3600f; }
@@ -48,7 +49,34 @@ public class DayTimeController : MonoBehaviour
 
     private void NextDay()
     {
-        time = 0;
+        time -= secondsInDay;
         days += 1; 
     }
+
+    public void SkipTime(float seconds = 0, float minute = 0, float hours = 0)
+    {
+        float timeToSkip = seconds;
+        timeToSkip += minute * 60f;
+        timeToSkip += hours * 3600f;
+
+        time += timeToSkip;
+
+    }
+
+    public void SkipToMorning()
+    {
+        float secondsToSkip = 0f;
+
+        if(time > morningTime)
+        {
+            secondsToSkip += secondsInDay - time + morningTime;
+        }
+        else
+        {
+            secondsToSkip += morningTime - time;
+        }
+
+        SkipTime(secondsToSkip);
+    }
+
 }
