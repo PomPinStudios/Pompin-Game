@@ -29,7 +29,7 @@ public class SellerIA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dayTimeController.textTime.text.ToString().Equals("01:00"))
+        if(dayTimeController.textTime.text.ToString().Equals("06:00"))
         {
             startMoving = true;
             sellerAnimator.SetBool("Running", true);

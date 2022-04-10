@@ -9,12 +9,15 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private Slider healthSlider;
     public Text healthText;
+    public float money;
+    public Text moneyText; 
 
     private void Start()
     {
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthText.text = health.ToString() + " / 100";
+        moneyText.text = money.ToString();
     }
 
 
@@ -35,6 +38,15 @@ public class PlayerStats : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Tas muerto");
         }
+    }
+
+    public void UpdateMoney(float dinero)
+    {
+        money += dinero;
+        if(money >= 0){
+            moneyText.text = money.ToString();
+        }
+        
     }
 
     void OnGUI()
