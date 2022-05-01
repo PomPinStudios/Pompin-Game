@@ -33,7 +33,7 @@ public class ShowHideShop : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        shown = !shown;
+        shown = false;
         onColission = false;
         shopCanvas.gameObject.SetActive(false);
         playerInventory.gameObject.SetActive(false);

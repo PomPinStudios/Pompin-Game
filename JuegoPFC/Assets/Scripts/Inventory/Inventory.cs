@@ -55,25 +55,53 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public void UseInventoryItems(string itemName)
+    public void UseInventoryItems(string itemName, int itemCount)
     {
-        for (int i = 0; i < slots.Length; i++)
+        if(itemCount == 0)
         {
-            if (slots[i].transform.GetChild(0).gameObject.name == itemName)
+            for (int i = 0; i < slots.Length; i++)
             {
-                inventoryItems[itemName]--;
-                text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
-                text.text = inventoryItems[itemName].ToString();
-
-                if (inventoryItems[itemName] <= 0)
+                if (slots[i].transform.GetChild(0).gameObject.name == itemName)
                 {
-                    Destroy(slots[i].transform.GetChild(0).gameObject);
-                    slots[i].GetComponent<SlotsScript>().isUsed = false;
-                    inventoryItems.Remove(itemName);
-                    ReorganizeInventory();
-                }
+                    inventoryItems[itemName]--;
+                    text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
+                    text.text = inventoryItems[itemName].ToString();
 
-                break;
+                    if (inventoryItems[itemName] <= 0)
+                    {
+                        Destroy(slots[i].transform.GetChild(0).gameObject);
+                        slots[i].GetComponent<SlotsScript>().isUsed = false;
+                        inventoryItems.Remove(itemName);
+                        ReorganizeInventory();
+                    }
+
+                    break;
+                }
+            }  
+        }
+        else
+        {
+            for(int j = 0; j < itemCount; j++)
+            {
+                for (int i = 0; i < slots.Length; i++)
+                {
+                    if (slots[i].transform.GetChild(0).gameObject.name == itemName)
+                    {
+                        inventoryItems[itemName]--;
+                        text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
+                        text.text = inventoryItems[itemName].ToString();
+
+                        if (inventoryItems[itemName] <= 0)
+                        {
+                            Destroy(slots[i].transform.GetChild(0).gameObject);
+                            slots[i].GetComponent<SlotsScript>().isUsed = false;
+                            inventoryItems.Remove(itemName);
+                            ReorganizeInventory();
+                        }
+
+                        break;
+                    }
+                }  
             }
         }
     }
@@ -93,6 +121,7 @@ public class Inventory : MonoBehaviour
                         itemToMove.transform.localPosition = new Vector3(0, 0, 0);
                         slots[i].GetComponent<SlotsScript>().isUsed = true;
                         slots[j].GetComponent<SlotsScript>().isUsed = false;
+                        break;
                     }
                 }
             }

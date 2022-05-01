@@ -45,7 +45,7 @@ public class ShopItems : MonoBehaviour
         }
         else if(inventory.inventoryItems.ContainsKey(itemToAdd.name))
         {
-            inventory.UseInventoryItems(itemToAdd.name);
+            inventory.UseInventoryItems(itemToAdd.name, 0);
             playerStats.UpdateMoney(itemSellPrice);
         }
     }

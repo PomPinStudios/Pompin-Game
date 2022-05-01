@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -6,7 +7,7 @@ public class Dialogue : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueMark;
 
-    [SerializeField, TextArea(4,6)] private string[] dialogueLines;
+    [SerializeField, TextArea(4,6)] public List<string> dialogueLines;
 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
@@ -16,6 +17,8 @@ public class Dialogue : MonoBehaviour
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
+    [HideInInspector]
+    public bool firstInteraction = false;
 
     void Update()
     {
@@ -50,7 +53,7 @@ public class Dialogue : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        if(lineIndex < dialogueLines.Length)
+        if(lineIndex < dialogueLines.Count)
         {
             StartCoroutine(ShowLine());
         }
@@ -59,6 +62,7 @@ public class Dialogue : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
+            firstInteraction = true;
             Time.timeScale = 1f;
         }
     }

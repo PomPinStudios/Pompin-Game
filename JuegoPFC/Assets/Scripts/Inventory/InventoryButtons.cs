@@ -15,6 +15,6 @@ public class InventoryButtons : MonoBehaviour
 
     public void UseItem()
     {
-        inventory.UseInventoryItems(gameObject.name);
+        inventory.UseInventoryItems(gameObject.name, 0);
     }
 }
