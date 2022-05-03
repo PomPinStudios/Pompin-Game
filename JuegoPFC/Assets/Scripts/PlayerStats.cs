@@ -7,8 +7,8 @@ public class PlayerStats : MonoBehaviour
 {
     [Space]
     public float health = 0f;
-    [SerializeField] private float maxHealth;
-    [SerializeField] private Slider healthSlider;
+    public float maxHealth;
+    public Slider healthSlider;
     public Text healthText;
 
     [Space]
@@ -25,12 +25,16 @@ public class PlayerStats : MonoBehaviour
 
     [Space]
     public int level;
+    public int currentStatPoints;
+
+    [Space]
+    public int armor;
 
     private void Start()
     {
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
-        healthText.text = health.ToString() + " / 100";
+        healthText.text = health.ToString() + " / " + maxHealth.ToString();
 
         expSlider.value = currExp;
         expSlider.maxValue = maxExp;
@@ -41,7 +45,7 @@ public class PlayerStats : MonoBehaviour
     public void UpdateHealth(float mod)
     {
         health += mod;
-        healthText.text = health.ToString() + " / 100";
+        healthText.text = health.ToString() + " / " + maxHealth.ToString();
 
         if (health > maxHealth)
         {
@@ -57,6 +61,13 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void UpdateMaxHealth(float mod)
+    {
+        maxHealth += mod;
+        healthSlider.maxValue = maxHealth;
+        healthText.text = health.ToString() + " / " + maxHealth.ToString();
+    }
+
     public void UpdateExp(float exp)
     {
         currExp += exp;
@@ -65,6 +76,8 @@ public class PlayerStats : MonoBehaviour
         {
             level += 1;
             currExp = 0;
+
+            currentStatPoints += 3;
 
             UpdateMaxExp();
 
@@ -86,8 +99,9 @@ public class PlayerStats : MonoBehaviour
 
     private void UpdateMaxExp()
     {
-        float nextCap = maxExp + (maxExp * 0.60f);
+        float nextCap = maxExp + (maxExp * 0.45f);
         maxExp = nextCap;
+        expSlider.maxValue = maxExp;
     }
 
     void OnGUI()

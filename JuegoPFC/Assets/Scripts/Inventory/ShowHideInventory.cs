@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShowHideInventory : MonoBehaviour
 {
     public GameObject inventory;
+    public GameObject stats;
     public bool shown;
 
     private void Start()
@@ -17,6 +18,7 @@ public class ShowHideInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventory.SetActive(!shown);
+            stats.SetActive(!shown);
             shown = !shown;
         }
     }
