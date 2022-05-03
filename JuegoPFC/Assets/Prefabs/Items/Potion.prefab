@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73239a0415271ed42a082a294994fd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthToGiver: 10
+  healthToGiver: 15
   itemToAdd: {fileID: 3237250035061069523, guid: 8cb3bb8b965f3e24dbca37b165ae5084, type: 3}
   amountToAdd: 1
 --- !u!58 &-1783199462779203937

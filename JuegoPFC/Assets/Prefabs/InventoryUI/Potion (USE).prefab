@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthToGive: 10
   manaToGive: 0
+  player: {fileID: 0}
 --- !u!1 &8316177476368744124
 GameObject:
   m_ObjectHideFlags: 0

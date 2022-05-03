@@ -5,21 +5,38 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
+    [Space]
     public float health = 0f;
-    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float maxHealth;
     [SerializeField] private Slider healthSlider;
     public Text healthText;
+
+    [Space]
+    public int damage;
+
+    [Space]
     public float money;
-    public Text moneyText; 
+    public Text moneyText;
+
+    [Space]
+    public float currExp;
+    public float maxExp;
+    public Slider expSlider;
+
+    [Space]
+    public int level;
 
     private void Start()
     {
         health = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthText.text = health.ToString() + " / 100";
+
+        expSlider.value = currExp;
+        expSlider.maxValue = maxExp;
+
         moneyText.text = money.ToString();
     }
-
 
     public void UpdateHealth(float mod)
     {
@@ -40,13 +57,37 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void UpdateExp(float exp)
+    {
+        currExp += exp;
+
+        if (currExp >= maxExp)
+        {
+            level += 1;
+            currExp = 0;
+
+            UpdateMaxExp();
+
+        }
+
+        expSlider.value = currExp;
+    }
+
     public void UpdateMoney(float dinero)
     {
         money += dinero;
-        if(money >= 0){
+        if (money >= 0)
+        {
             moneyText.text = money.ToString();
         }
-        
+
+    }
+
+
+    private void UpdateMaxExp()
+    {
+        float nextCap = maxExp + (maxExp * 0.60f);
+        maxExp = nextCap;
     }
 
     void OnGUI()

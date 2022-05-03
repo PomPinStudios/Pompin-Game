@@ -6,12 +6,20 @@ public class ItemsUse : MonoBehaviour
 {
     public float healthToGive;
     public float manaToGive;
+    PlayerStats playerStats;
+    PlayerSingleton playerSingleton;
+
+    void Start()
+    {
+        playerSingleton = PlayerSingleton.instance;
+        playerStats = playerSingleton.GetComponent<PlayerStats>();
+    }
 
     public void UseButton()
     {
         if (gameObject.name == "Potion (USE)")
         {
-            // DAR VIDA AL PLAYER
+            playerStats.UpdateHealth(healthToGive);
         }
     }
 

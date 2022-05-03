@@ -23,8 +23,9 @@ public class TopDownController : MonoBehaviour
     Vector2 direction;
 
     //Attack
-    public int damage;
     private Attacker attacker;
+    PlayerStats playerStats;
+    PlayerSingleton playerSingleton;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,9 @@ public class TopDownController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         animator = GetComponent<Animator>();
         attacker = GetComponent<Attacker>();
+
+        playerSingleton = PlayerSingleton.instance;
+        playerStats = playerSingleton.GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -55,7 +59,7 @@ public class TopDownController : MonoBehaviour
         //Attack
         if (Input.GetButtonDown("Fire1"))
         {
-            
+
             animator.SetBool("Attacking", true);
         }
 
@@ -64,7 +68,7 @@ public class TopDownController : MonoBehaviour
             GuardarDatos();
         }
 
-         if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             CargarDatos();
         }
@@ -107,8 +111,8 @@ public class TopDownController : MonoBehaviour
     }
 
     void AttackController()
-    {   
-        attacker.Attack(playerInput.lookDirection, damage);
+    {
+        attacker.Attack(playerInput.lookDirection, playerStats.damage);
         animator.SetBool("Attacking", false);
     }
 
@@ -120,7 +124,7 @@ public class TopDownController : MonoBehaviour
     private void CargarDatos()
     {
         PlayerData playerData = SaveManager.LoadPlayerData();
-        transform.position = new Vector3(playerData.position[0],playerData.position[1]);
+        transform.position = new Vector3(playerData.position[0], playerData.position[1]);
         Debug.Log("Datos Cargados");
     }
 }
