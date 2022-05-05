@@ -9,6 +9,7 @@ public class WeaponScript : MonoBehaviour
     public GameObject[] weapons;
     public GameObject weaponHolder;
     public GameObject currentWeapon;
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,16 @@ public class WeaponScript : MonoBehaviour
                 currentWeaponIndex += 1;
                 weapons[currentWeaponIndex].SetActive(true);
                 currentWeapon = weapons[currentWeaponIndex];
+                if (currentWeapon.tag == "Aim")
+                {
+                    this.GetComponent<AimShootBow>().enabled = true;
+                    canvas.SetActive(true);
+                }
+                else
+                {
+                    this.GetComponent<AimShootBow>().enabled = false;
+                    canvas.SetActive(false);
+                }
             }
         }
 
@@ -49,6 +60,16 @@ public class WeaponScript : MonoBehaviour
                 currentWeaponIndex -= 1;
                 weapons[currentWeaponIndex].SetActive(true);
                 currentWeapon = weapons[currentWeaponIndex];
+                if (currentWeapon.tag == "Aim")
+                {
+                    this.GetComponent<AimShootBow>().enabled = true;
+                    canvas.SetActive(true);
+                }
+                else
+                {
+                    this.GetComponent<AimShootBow>().enabled = false;
+                    canvas.SetActive(false);
+                }
             }
         }
     }

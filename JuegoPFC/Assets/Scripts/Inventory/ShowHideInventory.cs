@@ -15,7 +15,7 @@ public class ShowHideInventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             inventory.SetActive(!shown);
             stats.SetActive(!shown);

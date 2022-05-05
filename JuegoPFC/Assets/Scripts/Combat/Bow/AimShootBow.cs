@@ -26,7 +26,6 @@ public class AimShootBow : MonoBehaviour
 
         playerArrows = 30;
         arrowCountText.text = "x " + playerArrows.ToString();
-        
     }
 
     // Update is called once per frame
@@ -43,78 +42,78 @@ public class AimShootBow : MonoBehaviour
         Vector3 aimDirection = (mousePosition - aimTransform.position).normalized;
 
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        aimTransform.eulerAngles = new Vector3(0,0,angle);
+        aimTransform.eulerAngles = new Vector3(0, 0, angle);
 
-        if(angle < 90 && angle > 0)
+        if (angle < 90 && angle > 0)
         {
-            if(angle < 90 && angle > 60)
+            if (angle < 90 && angle > 60)
             {
                 horizontal = 0;
                 vertical = 1;
             }
-            if(angle < 60 && angle > 30)
+            if (angle < 60 && angle > 30)
             {
                 horizontal = 0;
-                vertical = 1; 
+                vertical = 1;
             }
-            if(angle < 30 && angle > 0)
+            if (angle < 30 && angle > 0)
             {
                 horizontal = 1;
-                vertical = 0;  
+                vertical = 0;
             }
         }
-        if(angle > 90 && angle < 180)
+        if (angle > 90 && angle < 180)
         {
-            if(angle > 90 && angle < 120)
+            if (angle > 90 && angle < 120)
             {
                 horizontal = 0;
-                vertical = 1;       
+                vertical = 1;
             }
-            if(angle > 120 && angle < 150)
-            {
-               horizontal = -1;
-                vertical = 1;  
-            }
-            if(angle > 150 && angle < 180)
+            if (angle > 120 && angle < 150)
             {
                 horizontal = -1;
-                vertical = 0; 
+                vertical = 1;
+            }
+            if (angle > 150 && angle < 180)
+            {
+                horizontal = -1;
+                vertical = 0;
             }
         }
-        if(angle < -90 && angle > -180)
+        if (angle < -90 && angle > -180)
         {
-            if(angle > -180 && angle < -150)
+            if (angle > -180 && angle < -150)
             {
                 horizontal = -1;
-                vertical = 0; 
+                vertical = 0;
             }
-            if(angle > -150 && angle < -120)
+            if (angle > -150 && angle < -120)
             {
                 horizontal = -1;
-                vertical = -1; 
+                vertical = -1;
             }
-            if(angle > -120 && angle < -90)
+            if (angle > -120 && angle < -90)
             {
                 horizontal = 0;
-                vertical = -1; 
+                vertical = -1;
             }
         }
-        if(angle > -90 && angle < 0)
+        if (angle > -90 && angle < 0)
         {
-            if(angle > -90 && angle < -60)
+            if (angle > -90 && angle < -60)
             {
                 horizontal = 0;
-                vertical = -1; 
+                vertical = -1;
             }
-            if(angle > -60 && angle < -30)
+            if (angle > -60 && angle < -30)
             {
                 horizontal = 1;
-                vertical = -1; 
+                vertical = -1;
             }
-            if(angle > -30 && angle < 0)
+            if (angle > -30 && angle < 0)
             {
                 horizontal = 1;
-                vertical = 0; 
+                vertical = 0;
             }
         }
 
@@ -127,15 +126,15 @@ public class AimShootBow : MonoBehaviour
         Vector3 crossHairDirection = new Vector3(crossHair.transform.position.x, crossHair.transform.position.y, crossHair.transform.position.z);
         Vector3 shootingDirection = (crossHairDirection - transform.position).normalized;
         shootingDirection.Normalize();
-        if(Input.GetButtonDown("FireArrow"))
+        if (Input.GetButtonDown("FireArrow"))
         {
             aimAnimator.SetBool("Aim", true);
             aimAnimator.SetBool("Shoot", false);
             playerAnimator.SetBool("AimIdle", true);
         }
-        if(Input.GetButtonUp("FireArrow"))
+        if (Input.GetButtonUp("FireArrow"))
         {
-            if(shootForce != 0f)
+            if (shootForce != 0f)
             {
                 GameObject shootArrow = Instantiate(arrow, transform.position, Quaternion.identity);
                 shootArrow.GetComponent<Rigidbody2D>().velocity = shootingDirection * shootForce * 2;
@@ -148,10 +147,10 @@ public class AimShootBow : MonoBehaviour
 
             aimAnimator.SetBool("Shoot", true);
             aimAnimator.SetBool("Aim", false);
-            playerAnimator.SetBool("AimIdle", false); 
+            playerAnimator.SetBool("AimIdle", false);
 
             shootForce = 0f;
-        } 
+        }
     }
 
     public static Vector3 GetMouseWorldPosition()

@@ -14,6 +14,7 @@ public class StatsController : MonoBehaviour
     public TextMeshProUGUI damage;
     public TextMeshProUGUI armor;
     public TextMeshProUGUI pointsRemaining;
+    public TextMeshProUGUI money;
 
     void Start()
     {
@@ -58,5 +59,6 @@ public class StatsController : MonoBehaviour
         damage.text = "Daño: " + playerStats.damage;
         armor.text = "Armadura: " + playerStats.armor;
         pointsRemaining.text = "Puntos disponibles: " + playerStats.currentStatPoints;
+        money.text = "Dinero: " + playerStats.money;
     }
 }
