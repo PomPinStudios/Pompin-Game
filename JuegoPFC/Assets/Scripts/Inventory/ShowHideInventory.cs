@@ -17,7 +17,7 @@ public class ShowHideInventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            inventory.SetActive(!shown);
+            inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
             stats.SetActive(!shown);
             shown = !shown;
         }

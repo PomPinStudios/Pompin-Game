@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6d493fbc98ec63c4aac131e98b96f6b0
+guid: d466f10eb0f0d294b86eb144489a4e40
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -416,141 +416,6 @@ TextureImporter:
   - first:
       213: 7617858605313722829
     second: HouseTileset_137
-  - first:
-      213: -202642316068250570
-    second: HouseTileset_138
-  - first:
-      213: -1640359781623008365
-    second: HouseTileset_139
-  - first:
-      213: -1888500252706260776
-    second: HouseTileset_140
-  - first:
-      213: 761160091144735188
-    second: HouseTileset_141
-  - first:
-      213: 3833550551373416583
-    second: HouseTileset_142
-  - first:
-      213: -4080609016372152609
-    second: HouseTileset_143
-  - first:
-      213: -525729503495548565
-    second: HouseTileset_144
-  - first:
-      213: -595223675367505409
-    second: HouseTileset_145
-  - first:
-      213: 8640311291004544132
-    second: HouseTileset_146
-  - first:
-      213: 5850758196599063885
-    second: HouseTileset_147
-  - first:
-      213: -3194635703243680466
-    second: HouseTileset_148
-  - first:
-      213: -6200426479499689545
-    second: HouseTileset_149
-  - first:
-      213: -1645071300956663092
-    second: HouseTileset_150
-  - first:
-      213: -6286048187965530516
-    second: HouseTileset_151
-  - first:
-      213: -467001433342636468
-    second: HouseTileset_152
-  - first:
-      213: -5805352009549016817
-    second: HouseTileset_153
-  - first:
-      213: 6893656766028334137
-    second: HouseTileset_154
-  - first:
-      213: -1781793006378590695
-    second: HouseTileset_155
-  - first:
-      213: 2893783799023324622
-    second: HouseTileset_156
-  - first:
-      213: 446204897569441590
-    second: HouseTileset_157
-  - first:
-      213: -1111196188868592495
-    second: HouseTileset_158
-  - first:
-      213: 3735963442830397011
-    second: HouseTileset_159
-  - first:
-      213: 1332657827205727797
-    second: HouseTileset_160
-  - first:
-      213: -8574586854316614567
-    second: HouseTileset_161
-  - first:
-      213: -6232521426729949554
-    second: HouseTileset_162
-  - first:
-      213: -4625071603941753654
-    second: HouseTileset_163
-  - first:
-      213: -4398308882962893475
-    second: HouseTileset_164
-  - first:
-      213: -606053541066837963
-    second: HouseTileset_165
-  - first:
-      213: -1636608534444543543
-    second: HouseTileset_166
-  - first:
-      213: -8045450006219743546
-    second: HouseTileset_167
-  - first:
-      213: 8842828689537834338
-    second: HouseTileset_168
-  - first:
-      213: 1458902099168306678
-    second: HouseTileset_169
-  - first:
-      213: 2423908991527922607
-    second: HouseTileset_170
-  - first:
-      213: 8063600586286413819
-    second: HouseTileset_171
-  - first:
-      213: -5744802014920559913
-    second: HouseTileset_172
-  - first:
-      213: -6081842189269218272
-    second: HouseTileset_173
-  - first:
-      213: 3373854188444936707
-    second: HouseTileset_174
-  - first:
-      213: 4578208042498147808
-    second: HouseTileset_175
-  - first:
-      213: -8104517498194189100
-    second: HouseTileset_176
-  - first:
-      213: -2584113530687429907
-    second: HouseTileset_177
-  - first:
-      213: -4580328238859977509
-    second: HouseTileset_178
-  - first:
-      213: 1763151679250715063
-    second: HouseTileset_179
-  - first:
-      213: 982303689479035969
-    second: HouseTileset_180
-  - first:
-      213: -8029900100750251760
-    second: HouseTileset_181
-  - first:
-      213: 1245950272979011799
-    second: HouseTileset_182
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -644,7 +509,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -665,7 +530,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -686,7 +551,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -707,7 +572,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -728,7 +593,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -749,7 +614,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -770,7 +635,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -791,7 +656,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -812,7 +677,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -833,7 +698,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -854,7 +719,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -875,7 +740,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -896,7 +761,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -917,7 +782,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -938,7 +803,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -959,7 +824,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -980,7 +845,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -1001,7 +866,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 240
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -1022,7 +887,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1043,7 +908,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1064,7 +929,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1085,7 +950,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1106,7 +971,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1127,7 +992,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1148,7 +1013,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1169,7 +1034,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1190,7 +1055,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1211,7 +1076,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1232,7 +1097,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1253,7 +1118,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1274,7 +1139,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1295,7 +1160,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1316,7 +1181,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1337,7 +1202,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 224
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -1358,7 +1223,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1379,7 +1244,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1400,7 +1265,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1421,7 +1286,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1442,7 +1307,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1463,7 +1328,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1484,7 +1349,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1505,7 +1370,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1526,7 +1391,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1547,7 +1412,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1568,7 +1433,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1589,7 +1454,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1610,7 +1475,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1630,8 +1495,8 @@ TextureImporter:
       name: HouseTileset_47
       rect:
         serializedVersion: 2
-        x: 288
-        y: 208
+        x: 272
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1652,7 +1517,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1673,7 +1538,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1694,7 +1559,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1715,7 +1580,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1736,7 +1601,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1757,7 +1622,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1778,7 +1643,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1799,7 +1664,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1820,7 +1685,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1841,7 +1706,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1862,7 +1727,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1883,7 +1748,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1904,7 +1769,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1925,7 +1790,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 192
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1946,7 +1811,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1967,7 +1832,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1988,7 +1853,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2009,7 +1874,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2030,7 +1895,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2051,7 +1916,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2072,7 +1937,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2093,7 +1958,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2114,7 +1979,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2135,7 +2000,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2156,7 +2021,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2177,7 +2042,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2198,7 +2063,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2219,7 +2084,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2240,7 +2105,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2261,7 +2126,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2282,7 +2147,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2303,7 +2168,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2324,7 +2189,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2345,7 +2210,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 176
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2366,7 +2231,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2387,7 +2252,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2408,7 +2273,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2429,7 +2294,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2450,7 +2315,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2471,7 +2336,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2492,7 +2357,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2513,7 +2378,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2534,7 +2399,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2555,7 +2420,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2576,7 +2441,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2597,7 +2462,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2618,7 +2483,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2639,7 +2504,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2660,7 +2525,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2681,7 +2546,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2702,7 +2567,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2723,7 +2588,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2744,7 +2609,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2765,7 +2630,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2786,7 +2651,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2807,7 +2672,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2828,7 +2693,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2849,7 +2714,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2870,7 +2735,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2891,7 +2756,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2912,7 +2777,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2933,7 +2798,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2954,7 +2819,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2975,7 +2840,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2996,7 +2861,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -3017,7 +2882,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 144
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -3038,7 +2903,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3059,7 +2924,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3080,7 +2945,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3101,7 +2966,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3122,7 +2987,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3143,7 +3008,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3164,7 +3029,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3185,7 +3050,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3206,7 +3071,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3227,7 +3092,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3248,7 +3113,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3269,7 +3134,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 176
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3289,8 +3154,8 @@ TextureImporter:
       name: HouseTileset_126
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 208
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3310,8 +3175,8 @@ TextureImporter:
       name: HouseTileset_127
       rect:
         serializedVersion: 2
-        x: 272
-        y: 128
+        x: 224
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3331,8 +3196,8 @@ TextureImporter:
       name: HouseTileset_128
       rect:
         serializedVersion: 2
-        x: 304
-        y: 128
+        x: 256
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3352,8 +3217,8 @@ TextureImporter:
       name: HouseTileset_129
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 272
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3373,8 +3238,8 @@ TextureImporter:
       name: HouseTileset_130
       rect:
         serializedVersion: 2
-        x: 256
-        y: 112
+        x: 304
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3394,8 +3259,8 @@ TextureImporter:
       name: HouseTileset_131
       rect:
         serializedVersion: 2
-        x: 272
-        y: 112
+        x: 320
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -3415,8 +3280,8 @@ TextureImporter:
       name: HouseTileset_132
       rect:
         serializedVersion: 2
-        x: 304
-        y: 112
+        x: 208
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -3436,8 +3301,8 @@ TextureImporter:
       name: HouseTileset_133
       rect:
         serializedVersion: 2
-        x: 320
-        y: 112
+        x: 224
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -3457,8 +3322,8 @@ TextureImporter:
       name: HouseTileset_134
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 256
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -3478,8 +3343,8 @@ TextureImporter:
       name: HouseTileset_135
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 272
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -3499,8 +3364,8 @@ TextureImporter:
       name: HouseTileset_136
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 304
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -3520,8 +3385,8 @@ TextureImporter:
       name: HouseTileset_137
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 320
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -3533,951 +3398,6 @@ TextureImporter:
       bones: []
       spriteID: dc980e65a0218b960800000000000000
       internalID: 7617858605313722829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_138
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63c1a4e13e1103df0800000000000000
-      internalID: -202642316068250570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_139
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 393f58838754c39e0800000000000000
-      internalID: -1640359781623008365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_140
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d8353f9603bac5e0800000000000000
-      internalID: -1888500252706260776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_141
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d9c2e1f11f209a00800000000000000
-      internalID: 761160091144735188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_142
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7888d1b5ae1833530800000000000000
-      internalID: 3833550551373416583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_143
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd6b1e738b3ce57c0800000000000000
-      internalID: -4080609016372152609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_144
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6194305dcb34b8f0800000000000000
-      internalID: -525729503495548565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_145
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff141db88375db7f0800000000000000
-      internalID: -595223675367505409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_146
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4846f11475d88e770800000000000000
-      internalID: 8640311291004544132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_147
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d450ef6c491123150800000000000000
-      internalID: 5850758196599063885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_148
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e255169f0cf5aa3d0800000000000000
-      internalID: -3194635703243680466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_149
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b1ce79d7f8a3f9a0800000000000000
-      internalID: -6200426479499689545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_150
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc2d9442e588b29e0800000000000000
-      internalID: -1645071300956663092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_151
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6e935b5a7873c8a0800000000000000
-      internalID: -6286048187965530516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_152
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4e8300bba0e489f0800000000000000
-      internalID: -467001433342636468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_153
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f011bbafa1f3f6fa0800000000000000
-      internalID: -5805352009549016817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_154
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9344696fd403baf50800000000000000
-      internalID: 6893656766028334137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_155
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91e578773bcc547e0800000000000000
-      internalID: -1781793006378590695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_156
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecdc0958809c82820800000000000000
-      internalID: 2893783799023324622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_157
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6378aa08dfc313600800000000000000
-      internalID: 446204897569441590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_158
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19c38be14fc3490f0800000000000000
-      internalID: -1111196188868592495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_159
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35e40cf05fec8d330800000000000000
-      internalID: 3735963442830397011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_160
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 536cdbdab3d8e7210800000000000000
-      internalID: 1332657827205727797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_161
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95c59b4afa2f00980800000000000000
-      internalID: -8574586854316614567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_162
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8620c0a8c2a189a0800000000000000
-      internalID: -6232521426729949554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_163
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acc3e4281e170dfb0800000000000000
-      internalID: -4625071603941753654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_164
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d553d8acf5116f2c0800000000000000
-      internalID: -4398308882962893475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_165
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 530f7d1f38dd697f0800000000000000
-      internalID: -606053541066837963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_166
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c17f0485399949e0800000000000000
-      internalID: -1636608534444543543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_167
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ce9b1198d1d85090800000000000000
-      internalID: -8045450006219743546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_168
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26d198187d908ba70800000000000000
-      internalID: 8842828689537834338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_169
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f5aff6cabf0f3410800000000000000
-      internalID: 1458902099168306678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_170
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faba5e7a26473a120800000000000000
-      internalID: 2423908991527922607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_171
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf7bb3ca20aa7ef60800000000000000
-      internalID: 8063600586286413819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_172
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d236b3310d5640b0800000000000000
-      internalID: -5744802014920559913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_173
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02ccf9870c4f89ba0800000000000000
-      internalID: -6081842189269218272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_174
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30a693a428652de20800000000000000
-      internalID: 3373854188444936707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_175
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e540f055ff098f30800000000000000
-      internalID: 4578208042498147808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_176
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d4a2346648f68f80800000000000000
-      internalID: -8104517498194189100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_177
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de268106f62632cd0800000000000000
-      internalID: -2584113530687429907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_178
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdc7f000cb76f60c0800000000000000
-      internalID: -4580328238859977509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_179
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b15fd65c19f77810800000000000000
-      internalID: 1763151679250715063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_180
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14c14f84008d1ad00800000000000000
-      internalID: 982303689479035969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_181
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01968e01760109090800000000000000
-      internalID: -8029900100750251760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HouseTileset_182
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d807b40c218a4110800000000000000
-      internalID: 1245950272979011799
       vertices: []
       indices: 
       edges: []

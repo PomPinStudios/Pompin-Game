@@ -8,6 +8,7 @@ public class HouseController : MonoBehaviour
 {
     // Start is called before the first frame update
     public Sprite repairHouse;
+    public GameObject transitionHouse;
     private Inventory inventory;
     private InventorySingleton inventorySingleton;
     private GameObject[] slots;
@@ -50,6 +51,7 @@ public class HouseController : MonoBehaviour
                 Destroy(gameObject.transform.GetChild(0).gameObject);
                 inventory.UseInventoryItems(item.name, woodCount);
                 gameObject.transform.Find("Door").gameObject.SetActive(true);
+                transitionHouse.SetActive(true);
             }
         }
         for(int i = 0; i < slots.Length; i++)
