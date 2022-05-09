@@ -16,7 +16,6 @@ public class ShopNPC : MonoBehaviour
     private void Start() 
     {
         inventory = gameObject.GetComponent<Inventory>();
-        Debug.Log(itemInStore.Length);
         SetUpStore();
     }
 

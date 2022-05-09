@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Scene_1");
+        SceneManager.LoadScene("House");
     }
 
     public void ExitTittle()

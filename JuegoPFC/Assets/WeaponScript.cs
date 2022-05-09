@@ -19,7 +19,7 @@ public class WeaponScript : MonoBehaviour
         for (int i = 0; i < totalWeapons; i++)
         {
             weapons[i] = weaponHolder.transform.GetChild(i).gameObject;
-            Debug.Log(weapons[i]);
+            // Debug.Log(weapons[i]);
             weapons[i].SetActive(false);
         }
 

@@ -31,7 +31,7 @@ public class Attacker : MonoBehaviour
     public void Attack(Vector2 attackDirection, int damage)
     {
         crearHitbox(attackDirection);
-        Debug.Log("attackDirectionX: " + attackDirection.x + "attackDirectionY: " + attackDirection.y);
+        // Debug.Log("attackDirectionX: " + attackDirection.x + "attackDirectionY: " + attackDirection.y);
         GameObject attackedObject;
         //Nos va a comprobar si una colision esta dentro de los puntos que le hemos pasado como parametro
         int elemenentosAtacados = Physics2D.OverlapArea(attackStart, attackEnd, attackFilter, ataqueColliders);
