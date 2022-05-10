@@ -17,9 +17,15 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    public void NewGame()
+    public void ReturnGame()
     {
         SceneManager.LoadScene("House");
+        SceneManager.LoadScene("Essential", LoadSceneMode.Additive);
+    }
+
+    public void NewGame()
+    {
+        this.ReturnGame();
     }
 
     public void ExitTittle()
