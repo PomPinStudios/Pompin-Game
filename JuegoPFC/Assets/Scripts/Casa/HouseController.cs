@@ -13,7 +13,7 @@ public class HouseController : MonoBehaviour
     private InventorySingleton inventorySingleton;
     private GameObject[] slots;
 
-    private Dialogue  dialogue;
+    private Dialogue dialogue;
     private List<string> dialogueElements;
 
     private bool primeraInteraccion;
@@ -32,10 +32,10 @@ public class HouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogue.firstInteraction)
+        if (dialogue.firstInteraction)
         {
             dialogueElements.Clear();
-            dialogueElements.Add(woodCount +  "/3");
+            dialogueElements.Add(woodCount + "/3");
         }
     }
     private int woodCount;
@@ -43,22 +43,24 @@ public class HouseController : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(Input.GetButton("Interactive"))
+        if (Input.GetButton("Interactive"))
         {
-            if(woodCount == 3)
+            if (woodCount == 3)
             {
                 gameObject.GetComponent<SpriteRenderer>().sprite = repairHouse;
                 Destroy(gameObject.transform.GetChild(0).gameObject);
                 inventory.UseInventoryItems(item.name, woodCount);
                 gameObject.transform.Find("Door").gameObject.SetActive(true);
                 transitionHouse.SetActive(true);
+
+                EventManager.Instance.QueueEvent(new BuildingGameEvent("Casa"));
             }
         }
-        for(int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
-            if(slots[i].transform.childCount != 0)
+            if (slots[i].transform.childCount != 0)
             {
-                if(slots[i].transform.GetChild(0).transform.name == "Wood (USE)")
+                if (slots[i].transform.GetChild(0).transform.name == "Wood (USE)")
                 {
                     item = slots[i].transform.GetChild(0).transform;
                     TextMeshProUGUI text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
