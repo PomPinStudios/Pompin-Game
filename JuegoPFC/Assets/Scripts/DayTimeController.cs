@@ -24,7 +24,7 @@ public class DayTimeController : MonoBehaviour
     {
         get { return time % 3600f / 60f; }
     }
-    private int days;
+    public int days;
     
     // Start is called before the first frame update
     void Start()

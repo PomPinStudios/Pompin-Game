@@ -4,9 +4,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveManager
 {
-    public static void SavePlayerData(TopDownController player)
+    public static void SavePlayerData(TopDownController player, PlayerStats stats, DayTimeController DTcontroller )
     {
-        PlayerData playerData = new PlayerData(player);
+        PlayerData playerData = new PlayerData(player, stats, DTcontroller);
 
         string dataPath = Application.persistentDataPath+ "/player.save";
         FileStream fileStream = new FileStream ( dataPath, FileMode.Create);

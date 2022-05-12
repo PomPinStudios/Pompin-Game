@@ -9,8 +9,12 @@ public class Inventory : MonoBehaviour
     public GameObject[] backPack;
     private bool isInstantiated;
     TextMeshProUGUI text;
-
+    public ItemList itemList;
     public Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
+
+    private void Start() {
+        if(itemList )
+    }
 
     public void CheckSlotsAvailability(GameObject itemToAdd, string itemName, int itemAmount)
     {

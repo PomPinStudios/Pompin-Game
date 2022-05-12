@@ -41,7 +41,7 @@ public class PlayerStats : MonoBehaviour
 
         moneyText.text = money.ToString();
     }
-
+    
     public void UpdateHealth(float mod)
     {
         health += mod;

@@ -62,16 +62,6 @@ public class TopDownController : MonoBehaviour
 
             animator.SetBool("Attacking", true);
         }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            GuardarDatos();
-        }
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            CargarDatos();
-        }
     }
 
     private void FixedUpdate()
@@ -116,15 +106,5 @@ public class TopDownController : MonoBehaviour
         animator.SetBool("Attacking", false);
     }
 
-    private void GuardarDatos()
-    {
-        SaveManager.SavePlayerData(this);
-        Debug.Log("Datos Guardados");
-    }
-    private void CargarDatos()
-    {
-        PlayerData playerData = SaveManager.LoadPlayerData();
-        transform.position = new Vector3(playerData.position[0], playerData.position[1]);
-        Debug.Log("Datos Cargados");
-    }
+    
 }
