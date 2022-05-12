@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     public Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
 
     private void Start() {
-        if(itemList )
+        // if(itemList )
     }
 
     public void CheckSlotsAvailability(GameObject itemToAdd, string itemName, int itemAmount)

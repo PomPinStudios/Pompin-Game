@@ -488,6 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8008e8ce2c7068f4c82f20f2e3e9d17a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 1
   healthToGive: 10
   manaToGive: 0
 --- !u!114 &-8281170630892699653

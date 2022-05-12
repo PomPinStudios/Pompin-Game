@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ItemsUse : MonoBehaviour
 {
+    public int ID;
     public float healthToGive;
     public float manaToGive;
     PlayerStats playerStats;

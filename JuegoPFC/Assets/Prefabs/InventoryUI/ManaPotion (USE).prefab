@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 6277297116610293876}
   - component: {fileID: 2039994115701393041}
   - component: {fileID: 756800750299680284}
+  - component: {fileID: 5171026706642401941}
   m_Layer: 5
   m_Name: ManaPotion (USE)
   m_TagString: Untagged
@@ -752,3 +753,18 @@ MonoBehaviour:
   TextNombre: {fileID: 8894621772293405864}
   TextDescripcion: {fileID: 3197772881989360909}
   panel: {fileID: 3916981757450399172}
+--- !u!114 &5171026706642401941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015833856617061973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8008e8ce2c7068f4c82f20f2e3e9d17a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 3
+  healthToGive: 0
+  manaToGive: 10

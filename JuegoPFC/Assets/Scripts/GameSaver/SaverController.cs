@@ -28,6 +28,8 @@ public class SaverController : MonoBehaviour
                 );
         Debug.Log("Datos Guardados");
     }
+
+    
     public void CargarDatos()
     {
         PlayerData playerData = SaveManager.LoadPlayerData();
