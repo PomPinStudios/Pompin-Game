@@ -7,10 +7,14 @@ public class SaverController : MonoBehaviour
 
     public GameObject player;
     public GameObject gameManager;
+
+    Inventory inventory;
+    InventorySingleton inventorySingleton;
     // Start is called before the first frame update
     void Start()
     {
-        
+        inventorySingleton = InventorySingleton.instance;
+        inventory = inventorySingleton.GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -26,7 +30,13 @@ public class SaverController : MonoBehaviour
                 player.GetComponent<PlayerStats>(), 
                 gameManager.GetComponent<DayTimeController>()
                 );
+
+        GameData.instance.ClearAllDataList();
+        inventory.InventoryToData();
+        GameData.instance.Save();
+
         Debug.Log("Datos Guardados");
+
     }
 
     
@@ -47,6 +57,11 @@ public class SaverController : MonoBehaviour
 
         gameManager.GetComponent<DayTimeController>().time = playerData.time;
         gameManager.GetComponent<DayTimeController>().days = playerData.days;
+
+        GameData.instance.ClearAllDataList();
+        inventory.DataToInventory();
+        GameData.instance.Load();
+
 
         Debug.Log("Datos Cargados");
     }

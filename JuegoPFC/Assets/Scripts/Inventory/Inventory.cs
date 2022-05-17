@@ -12,8 +12,15 @@ public class Inventory : MonoBehaviour
     public ItemList itemList;
     public Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
 
+    GameData gameData;
+
     private void Start() {
-        // if(itemList )
+        if(itemList != null)
+        {
+            DataToInventory();
+        }
+
+        gameData = GameData.instance;
     }
 
     public void CheckSlotsAvailability(GameObject itemToAdd, string itemName, int itemAmount)
@@ -131,4 +138,48 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    public void InventoryToData()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if(slots[i].GetComponent<SlotsScript>().isUsed)
+            {
+                Debug.Log(gameData);
+                if(!gameData.saveData.goToAddId.Contains(slots[i].GetComponentInChildren<ItemsUse>().ID))
+                {
+                    Debug.Log(slots[i].GetComponentInChildren<ItemsUse>().name);
+                    gameData.saveData.goToAddId.Add(slots[i].GetComponentInChildren<ItemsUse>().ID);
+                    gameData.saveData.inventoryItemsName.Add(slots[i].GetComponentInChildren<ItemsUse>().name);
+                    gameData.saveData.inventoryItemsAmount.Add(inventoryItems[slots[i].GetComponentInChildren<ItemsUse>().name]);
+                }
+            }
+        }
+    }
+
+    public void DataToInventory()
+    {
+        if(slots.Length != 0)
+        {
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if(slots[i].transform.childCount != 0)
+                {
+                Destroy(slots[i].transform.GetChild(0).gameObject);
+                }
+            }
+        }
+        for (int i = 0; i < GameData.instance.saveData.goToAddId.Count; i++)
+        {
+            for (int j = 0; j < itemList.items.Count; j++)
+            {
+                if(itemList.items[j].ID == GameData.instance.saveData.goToAddId[i])
+                {
+                    CheckSlotsAvailability(itemList.items[j].gameObject, GameData.instance.saveData.inventoryItemsName[i],
+                        GameData.instance.saveData.inventoryItemsAmount[i]);
+                }
+            }
+        }
+    }
+
 }
