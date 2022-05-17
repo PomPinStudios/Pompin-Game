@@ -295,12 +295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tipo: "Poci\xF3n"
-  Nombre: "Pocu\xF3n de Mana"
+  Nombre: "Poci\xF3n de Mana"
   Descripcion: Da mana
-  TextTipo: {fileID: 0}
-  TextNombre: {fileID: 0}
-  TextDescripcion: {fileID: 0}
-  panel: {fileID: 0}
 --- !u!114 &5171026706642401941
 MonoBehaviour:
   m_ObjectHideFlags: 0
