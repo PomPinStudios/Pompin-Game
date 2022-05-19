@@ -22,7 +22,6 @@ public class Potions : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             inventory.CheckSlotsAvailability(itemToAdd, itemToAdd.name, amountToAdd);
-
             Destroy(gameObject);
         }
     }

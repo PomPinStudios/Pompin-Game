@@ -14,8 +14,9 @@ public class Inventory : MonoBehaviour
 
     GameData gameData;
 
-    private void Start() {
-        if(itemList != null)
+    private void Start()
+    {
+        if (itemList != null)
         {
             DataToInventory();
         }
@@ -30,12 +31,15 @@ public class Inventory : MonoBehaviour
         {
             if (slots[i].transform.childCount > 0)
             {
+                Debug.Log("EL PRIMER IF");
                 slots[i].GetComponent<SlotsScript>().isUsed = true;
             }
             else if (!isInstantiated && slots[i].GetComponent<SlotsScript>().isUsed == false)
             {
+                Debug.Log("ELSE IF");
                 if (!inventoryItems.ContainsKey(itemName))
                 {
+                    Debug.Log("CREA ITEM");
                     GameObject item = Instantiate(itemToAdd, slots[i].transform.position, Quaternion.identity);
                     item.transform.SetParent(slots[i].transform, false);
                     item.transform.localPosition = new Vector3(0, 0, 0);
@@ -49,15 +53,20 @@ public class Inventory : MonoBehaviour
                 }
                 else
                 {
+                    Debug.Log("ELSEF");
                     for (int j = 0; j < slots.Length; j++)
                     {
+                        // if (slots[j].transform.childCount != 0)
+                        // {
                         if (slots[j].transform.GetChild(0).gameObject.name == itemName)
                         {
+                            Debug.Log("AÑADIR CANTIDAD");
                             inventoryItems[itemName] += itemAmount;
                             text = slots[j].GetComponentInChildren<TextMeshProUGUI>();
                             text.text = inventoryItems[itemName].ToString();
                             break;
                         }
+                        // }
                     }
                     break;
                 }
@@ -68,31 +77,34 @@ public class Inventory : MonoBehaviour
 
     public void UseInventoryItems(string itemName, int itemCount)
     {
-        if(itemCount == 0)
+        if (itemCount == 0)
         {
             for (int i = 0; i < slots.Length; i++)
             {
-                if (slots[i].transform.GetChild(0).gameObject.name == itemName)
+                if (slots[i].transform.childCount != 0)
                 {
-                    inventoryItems[itemName]--;
-                    text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
-                    text.text = inventoryItems[itemName].ToString();
-
-                    if (inventoryItems[itemName] <= 0)
+                    if (slots[i].transform.GetChild(0).gameObject.name == itemName)
                     {
-                        Destroy(slots[i].transform.GetChild(0).gameObject);
-                        slots[i].GetComponent<SlotsScript>().isUsed = false;
-                        inventoryItems.Remove(itemName);
-                        ReorganizeInventory();
-                    }
+                        inventoryItems[itemName]--;
+                        text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
+                        text.text = inventoryItems[itemName].ToString();
 
-                    break;
+                        if (inventoryItems[itemName] <= 0)
+                        {
+                            Destroy(slots[i].transform.GetChild(0).gameObject);
+                            slots[i].GetComponent<SlotsScript>().isUsed = false;
+                            inventoryItems.Remove(itemName);
+                            ReorganizeInventory();
+                        }
+
+                        break;
+                    }
                 }
-            }  
+            }
         }
         else
         {
-            for(int j = 0; j < itemCount; j++)
+            for (int j = 0; j < itemCount; j++)
             {
                 for (int i = 0; i < slots.Length; i++)
                 {
@@ -112,7 +124,7 @@ public class Inventory : MonoBehaviour
 
                         break;
                     }
-                }  
+                }
             }
         }
     }
@@ -127,12 +139,15 @@ public class Inventory : MonoBehaviour
                 {
                     if (slots[j].GetComponent<SlotsScript>().isUsed)
                     {
+                        // if (slots[j].transform.childCount != 0)
+                        // {
                         Transform itemToMove = slots[j].transform.GetChild(0).transform;
                         itemToMove.transform.SetParent(slots[i].transform, false);
                         itemToMove.transform.localPosition = new Vector3(0, 0, 0);
                         slots[i].GetComponent<SlotsScript>().isUsed = true;
                         slots[j].GetComponent<SlotsScript>().isUsed = false;
                         break;
+                        // }
                     }
                 }
             }
@@ -143,37 +158,48 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if(slots[i].GetComponent<SlotsScript>().isUsed)
+            if (slots[i].GetComponent<SlotsScript>().isUsed)
             {
-                Debug.Log(gameData);
-                if(!gameData.saveData.goToAddId.Contains(slots[i].GetComponentInChildren<ItemsUse>().ID))
+                if (slots[i].transform.childCount != 0)
                 {
-                    Debug.Log(slots[i].GetComponentInChildren<ItemsUse>().name);
-                    gameData.saveData.goToAddId.Add(slots[i].GetComponentInChildren<ItemsUse>().ID);
-                    gameData.saveData.inventoryItemsName.Add(slots[i].GetComponentInChildren<ItemsUse>().name);
-                    gameData.saveData.inventoryItemsAmount.Add(inventoryItems[slots[i].GetComponentInChildren<ItemsUse>().name]);
+                    if (!gameData.saveData.goToAddId.Contains(slots[i].GetComponentInChildren<ItemsUse>().ID))
+                    {
+                        Debug.Log(slots[i].GetComponentInChildren<ItemsUse>().name);
+                        gameData.saveData.goToAddId.Add(slots[i].GetComponentInChildren<ItemsUse>().ID);
+                        gameData.saveData.inventoryItemsName.Add(slots[i].GetComponentInChildren<ItemsUse>().name);
+                        gameData.saveData.inventoryItemsAmount.Add(inventoryItems[slots[i].GetComponentInChildren<ItemsUse>().name]);
+                    }
                 }
+
             }
         }
     }
 
     public void DataToInventory()
     {
-        if(slots.Length != 0)
+        if (slots.Length != 0)
         {
             for (int i = 0; i < slots.Length; i++)
             {
-                if(slots[i].transform.childCount != 0)
+                if (slots[i].transform.childCount != 0)
                 {
-                Destroy(slots[i].transform.GetChild(0).gameObject);
+                    var itemName = slots[i].transform.GetChild(0).gameObject.name;
+                    Destroy(slots[i].transform.GetChild(0).gameObject);
+                    inventoryItems.Remove(itemName);
+                    // ReorganizeInventory();
+
                 }
+                slots[i].GetComponent<SlotsScript>().isUsed = false;
+
             }
+
         }
+
         for (int i = 0; i < GameData.instance.saveData.goToAddId.Count; i++)
         {
             for (int j = 0; j < itemList.items.Count; j++)
             {
-                if(itemList.items[j].ID == GameData.instance.saveData.goToAddId[i])
+                if (itemList.items[j].ID == GameData.instance.saveData.goToAddId[i])
                 {
                     CheckSlotsAvailability(itemList.items[j].gameObject, GameData.instance.saveData.inventoryItemsName[i],
                         GameData.instance.saveData.inventoryItemsAmount[i]);

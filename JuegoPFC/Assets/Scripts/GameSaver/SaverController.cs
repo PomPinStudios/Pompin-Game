@@ -20,14 +20,14 @@ public class SaverController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void GuardarDatos()
     {
         SaveManager.SavePlayerData(
-                player.GetComponent<TopDownController>(), 
-                player.GetComponent<PlayerStats>(), 
+                player.GetComponent<TopDownController>(),
+                player.GetComponent<PlayerStats>(),
                 gameManager.GetComponent<DayTimeController>()
                 );
 
@@ -39,12 +39,12 @@ public class SaverController : MonoBehaviour
 
     }
 
-    
+
     public void CargarDatos()
     {
         PlayerData playerData = SaveManager.LoadPlayerData();
         player.transform.position = new Vector3(playerData.position[0], playerData.position[1]);
-        
+
         player.GetComponent<PlayerStats>().health = playerData.health;
         player.GetComponent<PlayerStats>().maxHealth = playerData.maxHealth;
         player.GetComponent<PlayerStats>().damage = playerData.damage;
@@ -58,7 +58,6 @@ public class SaverController : MonoBehaviour
         gameManager.GetComponent<DayTimeController>().time = playerData.time;
         gameManager.GetComponent<DayTimeController>().days = playerData.days;
 
-        GameData.instance.ClearAllDataList();
         inventory.DataToInventory();
         GameData.instance.Load();
 

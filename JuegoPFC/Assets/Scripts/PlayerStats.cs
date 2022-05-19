@@ -41,13 +41,13 @@ public class PlayerStats : MonoBehaviour
 
         moneyText.text = money.ToString();
     }
-    
+
     public void UpdateHealth(float mod)
     {
         health += mod;
         healthText.text = health.ToString() + " / " + maxHealth.ToString();
 
-        if (health > maxHealth)
+        if (health >= maxHealth)
         {
             health = maxHealth;
         }
