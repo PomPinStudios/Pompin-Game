@@ -59,9 +59,10 @@ public class SaverController : MonoBehaviour
         gameManager.GetComponent<DayTimeController>().days = playerData.days;
 
         inventory.DataToInventory();
+        inventory.cargando = true;
         GameData.instance.Load();
 
 
-        Debug.Log("Datos Cargados");
+        // Debug.Log("Datos Cargados");
     }
 }

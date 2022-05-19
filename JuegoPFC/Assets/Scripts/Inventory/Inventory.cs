@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
     public Dictionary<string, int> inventoryItems = new Dictionary<string, int>();
 
     GameData gameData;
+    public bool cargando = false;
 
     private void Start()
     {
@@ -32,11 +33,18 @@ public class Inventory : MonoBehaviour
             if (slots[i].transform.childCount > 0)
             {
                 Debug.Log("EL PRIMER IF");
+                Debug.Log(i +" "+  slots[i].transform.GetChild(0).gameObject.name);
                 slots[i].GetComponent<SlotsScript>().isUsed = true;
             }
             else if (!isInstantiated && slots[i].GetComponent<SlotsScript>().isUsed == false)
             {
                 Debug.Log("ELSE IF");
+                Debug.Log("nombre  " + itemName);
+                Debug.Log("contiene  " + inventoryItems.ContainsKey(itemName));
+                foreach (KeyValuePair<string, int> author in inventoryItems)  
+                {  
+                    Debug.Log("Key: "+author.Key+" " + " Value " +  author.Value); 
+                } 
                 if (!inventoryItems.ContainsKey(itemName))
                 {
                     Debug.Log("CREA ITEM");
@@ -61,10 +69,17 @@ public class Inventory : MonoBehaviour
                         if (slots[j].transform.GetChild(0).gameObject.name == itemName)
                         {
                             Debug.Log("AÑADIR CANTIDAD");
-                            inventoryItems[itemName] += itemAmount;
-                            text = slots[j].GetComponentInChildren<TextMeshProUGUI>();
-                            text.text = inventoryItems[itemName].ToString();
-                            break;
+                            if(cargando){
+                                inventoryItems[itemName] = itemAmount;
+                                text = slots[j].GetComponentInChildren<TextMeshProUGUI>();
+                                text.text = inventoryItems[itemName].ToString();
+                                break;
+                            }else{
+                                inventoryItems[itemName] += itemAmount;
+                                text = slots[j].GetComponentInChildren<TextMeshProUGUI>();
+                                text.text = inventoryItems[itemName].ToString();
+                                break;
+                            }
                         }
                         // }
                     }
@@ -75,7 +90,7 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public void UseInventoryItems(string itemName, int itemCount)
+    public void UseInventoryItems(string itemName, int itemCount = 0)
     {
         if (itemCount == 0)
         {
@@ -177,23 +192,23 @@ public class Inventory : MonoBehaviour
 
     public void DataToInventory()
     {
-        if (slots.Length != 0)
-        {
-            for (int i = 0; i < slots.Length; i++)
-            {
-                if (slots[i].transform.childCount != 0)
-                {
-                    var itemName = slots[i].transform.GetChild(0).gameObject.name;
-                    Destroy(slots[i].transform.GetChild(0).gameObject);
-                    inventoryItems.Remove(itemName);
-                    // ReorganizeInventory();
+        cargando = true;
+        // if (slots.Length != 0)
+        // {
+        //     for (int i = 0; i < slots.Length; i++)
+        //     {
+        //         if (slots[i].transform.childCount != 0)
+        //         {
+        //             var itemName = slots[i].transform.GetChild(0).gameObject.name;
+        //             Destroy(slots[i].transform.GetChild(0).gameObject);
+        //             // inventoryItems.Remove(itemName);
 
-                }
-                slots[i].GetComponent<SlotsScript>().isUsed = false;
+        //         }
+        //         slots[i].GetComponent<SlotsScript>().isUsed = false;
 
-            }
+        //     }
 
-        }
+        // }
 
         for (int i = 0; i < GameData.instance.saveData.goToAddId.Count; i++)
         {
@@ -205,6 +220,18 @@ public class Inventory : MonoBehaviour
                         GameData.instance.saveData.inventoryItemsAmount[i]);
                 }
             }
+        }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].transform.childCount == 0)
+            {
+                slots[i].GetComponent<SlotsScript>().isUsed = false;
+                ReorganizeInventory();
+            }else{
+                Debug.Log(i +" "+  slots[i].transform.GetChild(0).gameObject.name);
+            }
+
         }
     }
 

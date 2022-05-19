@@ -18,7 +18,7 @@ public class GameData : MonoBehaviour
     public static GameData instance;
 
     private void Awake() {
-        Debug.Log("SA DEPERTAO");        
+        // Debug.Log("SA DEPERTAO");        
         if (instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
@@ -29,7 +29,7 @@ public class GameData : MonoBehaviour
             Destroy(instance.gameObject);
             instance = this;
         }
-        Debug.Log(instance);   
+        // Debug.Log(instance);   
         if(File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
         {
             Load();
@@ -64,7 +64,7 @@ public class GameData : MonoBehaviour
             saveData = formatter.Deserialize(file) as SaveData;
 
             file.Close();
-            print("Data loaded");
+            // print("Data loaded");
         }
     }
 

@@ -40,6 +40,7 @@ public class ShopItems : MonoBehaviour
             if(itemBuyPrice <= playerStats.money)
             {
                 playerStats.UpdateMoney(-itemBuyPrice);
+                inventory.cargando = false;
                 inventory.CheckSlotsAvailability(itemToAdd, itemToAdd.name, amountToAdd);
             }
         }
