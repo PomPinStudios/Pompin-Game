@@ -17,6 +17,7 @@ public class HouseController : MonoBehaviour
     private List<string> dialogueElements;
 
     private bool primeraInteraccion;
+    private bool inColision;
 
     void Start()
     {
@@ -37,24 +38,34 @@ public class HouseController : MonoBehaviour
             dialogueElements.Clear();
             dialogueElements.Add(woodCount + "/3");
         }
+
+        if(inColision) { RepairHouse(); }
     }
     private int woodCount;
     private Transform item;
 
-    void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other) {
+        inColision = true;
+    }
+    void OnTriggerExit2D(Collider2D other)
     {
-        if (Input.GetButton("Interactive"))
+        inColision = false;
+    }
+    void RepairHouse()
+    {
+        if (Input.GetButtonDown("Interactive"))
         {
-            if (woodCount == 3)
+            if (woodCount >= 3)
             {
                 gameObject.GetComponent<SpriteRenderer>().sprite = repairHouse;
-                Destroy(gameObject.transform.GetChild(0).gameObject);
-                inventory.UseInventoryItems(item.name, woodCount);
+                Destroy(gameObject.transform.Find("Nota").gameObject);
+                inventory.UseInventoryItems(item.name, 3);
                 gameObject.transform.Find("Door").gameObject.SetActive(true);
                 transitionHouse.SetActive(true);
 
                 EventManager.Instance.QueueEvent(new BuildingGameEvent("Casa"));
             }
+            
         }
         for (int i = 0; i < slots.Length; i++)
         {

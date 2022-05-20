@@ -62,8 +62,8 @@ public class Dialogue : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
-            firstInteraction = true;
             Time.timeScale = 1f;
+            firstInteraction = true;
         }
     }
 

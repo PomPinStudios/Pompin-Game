@@ -42,6 +42,7 @@ public class SaverController : MonoBehaviour
 
     public void CargarDatos()
     {
+        Debug.Log("primera vez");
         PlayerData playerData = SaveManager.LoadPlayerData();
         player.transform.position = new Vector3(playerData.position[0], playerData.position[1]);
 
