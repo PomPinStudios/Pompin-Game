@@ -210,6 +210,11 @@ public class Inventory : MonoBehaviour
 
         // }
 
+        foreach(var item in itemList.items)
+        {
+            Debug.Log(item.ID);
+        }
+
         for (int i = 0; i < GameData.instance.saveData.goToAddId.Count; i++)
         {
             for (int j = 0; j < itemList.items.Count; j++)
@@ -222,17 +227,32 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount == 0)
-            {
-                slots[i].GetComponent<SlotsScript>().isUsed = false;
-                ReorganizeInventory();
-            }else{
-                Debug.Log(i +" "+  slots[i].transform.GetChild(0).gameObject.name);
-            }
 
+        foreach(var slot in slots)
+        {
+            if(slot.transform.childCount > 0)
+            {
+                if(!GameData.instance.saveData.goToAddId.Contains(slot.GetComponentInChildren<ItemsUse>().ID))
+                {
+                    var itemName = slot.transform.GetChild(0).gameObject.name;
+                    Destroy(slot.transform.GetChild(0).gameObject);
+                    inventoryItems.Remove(itemName);
+                    slot.GetComponent<SlotsScript>().isUsed = false;
+                }
+            }
         }
+
+        // for (int i = 0; i < slots.Length; i++)
+        // {
+        //     if (slots[i].transform.childCount == 0)
+        //     {
+        //         slots[i].GetComponent<SlotsScript>().isUsed = false;
+        //         ReorganizeInventory();
+        //     }else{
+        //         Debug.Log(i +" "+  slots[i].transform.GetChild(0).gameObject.name);
+        //     }
+
+        // }
     }
 
 }
