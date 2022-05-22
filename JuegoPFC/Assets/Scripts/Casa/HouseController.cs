@@ -39,7 +39,7 @@ public class HouseController : MonoBehaviour
             dialogueElements.Add(woodCount + "/3");
         }
 
-        if(inColision) { RepairHouse(); }
+        if(inColision && dialogue.firstInteraction) { RepairHouse(); }
     }
     private int woodCount;
     private Transform item;

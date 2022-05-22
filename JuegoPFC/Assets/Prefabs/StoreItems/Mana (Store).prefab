@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8406159206620578433}
   - component: {fileID: 1054428584855705260}
   - component: {fileID: 7154802923976812393}
+  - component: {fileID: -3301439901036366576}
   m_Layer: 5
   m_Name: Mana (Store)
   m_TagString: Untagged
@@ -152,6 +153,21 @@ MonoBehaviour:
   amountToAdd: 1
   buyPriceText: {fileID: 0}
   shopNPC: {fileID: 0}
+--- !u!114 &-3301439901036366576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2639611110624196749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4494ace007bd7f4983e40de6a342a82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tipo: "Poci\xF3n"
+  Nombre: "Pci\xF3n de Mana"
+  Descripcion: Da mana
 --- !u!1 &8873273009613459682
 GameObject:
   m_ObjectHideFlags: 0
