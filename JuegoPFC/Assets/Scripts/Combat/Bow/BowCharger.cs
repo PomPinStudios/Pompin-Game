@@ -12,6 +12,9 @@ public class BowCharger : MonoBehaviour
 
     public Vector3 offset;
 
+    public AudioSource clip1;
+    public AudioSource clip2;
+
     void Start()
     {
         BowPowerSlider.value = 0f;
@@ -23,6 +26,11 @@ public class BowCharger : MonoBehaviour
     void Update()
     {
         BowPowerSlider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + offset);
+        if(Input.GetButtonDown("FireArrow"))
+        {
+            clip1.Play();
+        }
+
         if(Input.GetButton("FireArrow"))
         {
             BowPowerSlider.gameObject.SetActive(true);
@@ -31,6 +39,7 @@ public class BowCharger : MonoBehaviour
 
         if(Input.GetButtonUp("FireArrow"))
         {
+            clip2.Play();
             BowCharge = 0f;
             BowPowerSlider.value = 0f;
             BowPowerSlider.gameObject.SetActive(false);        
