@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\PickUpItem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestWindow.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopUnlocker.cs" />
      <Compile Include="Assets\Scripts\Shop\ShowHideShop.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\Sleep\SleepArea.cs" />

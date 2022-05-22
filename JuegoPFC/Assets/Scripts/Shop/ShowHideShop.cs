@@ -49,20 +49,26 @@ public class ShowHideShop : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        onColission = true;
-        showHideInventory.shopOpen = true;
-        playerInventory.GetComponent<Canvas>().enabled = false;
-        showHideInventory.stats.SetActive(false);
-        showHideInventory.shown = false;
-        afterClose = false;
+        if(this.enabled)
+        {
+            onColission = true;
+            showHideInventory.shopOpen = true;
+            playerInventory.GetComponent<Canvas>().enabled = false;
+            showHideInventory.stats.SetActive(false);
+            showHideInventory.shown = false;
+            afterClose = false;
+        }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        showHideInventory.shopOpen = false;
-        shown = false;
-        onColission = false;
-        shopCanvas.gameObject.SetActive(false);
-        playerInventory.GetComponent<Canvas>().enabled = false;
-        afterClose = false;
+        if(this.enabled)
+        {
+            showHideInventory.shopOpen = false;
+            shown = false;
+            onColission = false;
+            shopCanvas.gameObject.SetActive(false);
+            playerInventory.GetComponent<Canvas>().enabled = false;
+            afterClose = false;
+        }
     }
 }

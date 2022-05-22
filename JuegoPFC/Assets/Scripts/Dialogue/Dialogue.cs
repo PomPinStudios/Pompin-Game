@@ -19,28 +19,14 @@ public class Dialogue : MonoBehaviour
     private int lineIndex;
     [HideInInspector]
     public bool firstInteraction = false;
+    public bool finishSpeaking = false;
 
     void Update()
     {
-        if(isPlayerInRange && Input.GetButtonDown("Interactive"))
-        {
-            if (!didDialogueStart)
-            {
-                StartDialogue();
-            }
-            else if (dialogueText.text == dialogueLines[lineIndex])
-            {
-                NextDialogueLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                dialogueText.text = dialogueLines[lineIndex];
-            }
-        }
+        dialogue();
     }
 
-    private void StartDialogue()
+    public void StartDialogue()
     {
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
@@ -64,6 +50,7 @@ public class Dialogue : MonoBehaviour
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             firstInteraction = true;
+            finishSpeaking = true;
         }
     }
 
@@ -93,4 +80,26 @@ public class Dialogue : MonoBehaviour
             dialogueMark.SetActive(false);
         }
     }
+
+    public void dialogue()
+    {
+        if(isPlayerInRange && Input.GetButtonDown("Interactive"))
+        {
+            finishSpeaking = false;
+            if (!didDialogueStart)
+            {
+                StartDialogue();
+            }
+            else if (dialogueText.text == dialogueLines[lineIndex])
+            {
+                NextDialogueLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                dialogueText.text = dialogueLines[lineIndex];
+            }
+        }
+    }
+    
 }
