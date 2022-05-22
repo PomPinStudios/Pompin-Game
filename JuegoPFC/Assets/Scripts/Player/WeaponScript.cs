@@ -10,6 +10,8 @@ public class WeaponScript : MonoBehaviour
     public GameObject weaponHolder;
     public GameObject currentWeapon;
     public GameObject canvas;
+
+    public AudioSource clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,14 @@ public class WeaponScript : MonoBehaviour
                     this.GetComponent<AimShootBow>().enabled = false;
                     canvas.SetActive(false);
                 }
+            }
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (currentWeapon.tag != "Aim")
+            {
+                clip.Play();
             }
         }
 
