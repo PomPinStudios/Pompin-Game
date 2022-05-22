@@ -30,6 +30,8 @@ public class PlayerStats : MonoBehaviour
     [Space]
     public int armor;
 
+    public AudioSource clip;
+
     private void Start()
     {
         health = maxHealth;
@@ -71,6 +73,10 @@ public class PlayerStats : MonoBehaviour
     public void UpdateExp(float exp)
     {
         currExp += exp;
+
+        if(exp > 0){
+            clip.Play();
+        }
 
         if (currExp >= maxExp)
         {
