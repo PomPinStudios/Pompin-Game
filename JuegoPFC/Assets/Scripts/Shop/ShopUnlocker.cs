@@ -58,6 +58,11 @@ public class ShopUnlocker : MonoBehaviour
                     showHideShop.enabled = true;
                     showHideShop.onColission = true;
                     this.enabled = false;
+                    showHideShop.Start();
+                    showHideShop.showHideInventory.shopOpen = true;
+                    showHideShop.playerInventory.GetComponent<Canvas>().enabled = false;
+                    showHideShop.showHideInventory.stats.SetActive(false);
+                    showHideShop.showHideInventory.shown = false;
                 }
             }
             else

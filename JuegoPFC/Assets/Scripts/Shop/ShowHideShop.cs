@@ -5,28 +5,30 @@ using UnityEngine;
 public class ShowHideShop : MonoBehaviour
 {
     public Canvas shopCanvas;
-    private Canvas inventory;
-    private GameObject playerInventory;
-    private GameObject inventoryManager;
-    private ShowHideInventory showHideInventory;
+    [HideInInspector]
+    public Canvas inventory;
+    [HideInInspector]
+    public GameObject playerInventory;
+    [HideInInspector]
+    public GameObject inventoryManager;
+    [HideInInspector]
+    public ShowHideInventory showHideInventory;
 
     private bool shown = false;
     [HideInInspector]
     public bool onColission = false;
     public bool afterClose = false;
 
-    private void Start() {
+    public void Start() {
         playerInventory = GameObject.Find("Inventory");
         inventoryManager = GameObject.Find("InventoryManager");
         showHideInventory = inventoryManager.GetComponent<ShowHideInventory>();
     }
     public void ClosePanel()
     {
-        // shown = !shown;
         shopCanvas.gameObject.SetActive(false);
         playerInventory.GetComponent<Canvas>().enabled = false;
         showHideInventory.shopOpen = false;
-        Debug.Log(shown);
         afterClose = true;
     }
 
@@ -34,7 +36,6 @@ public class ShowHideShop : MonoBehaviour
         if(onColission){
             if (Input.GetButtonDown("Interactive"))        
             {
-                Debug.Log(shown);
                 if(afterClose)
                 {
                     shopCanvas.gameObject.SetActive(true);

@@ -16,7 +16,7 @@ public class PlayerStats : MonoBehaviour
 
     [Space]
     public float money;
-    public Text moneyText;
+    // public Text moneyText;
 
     [Space]
     public float currExp;
@@ -39,7 +39,7 @@ public class PlayerStats : MonoBehaviour
         expSlider.value = currExp;
         expSlider.maxValue = maxExp;
 
-        moneyText.text = money.ToString();
+        // moneyText.text = money.ToString();
     }
 
     public void UpdateHealth(float mod)
@@ -89,11 +89,6 @@ public class PlayerStats : MonoBehaviour
     public void UpdateMoney(float dinero)
     {
         money += dinero;
-        if (money >= 0)
-        {
-            moneyText.text = money.ToString();
-        }
-
     }
 
 
