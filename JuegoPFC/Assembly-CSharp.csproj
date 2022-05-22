@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Combat\Bow\CrossHairController.cs" />
-     <Compile Include="Assets\Scripts\PickUpItem.cs" />
+     <Compile Include="Assets\Scripts\Player\PickUpItem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestWindow.cs" />
      <Compile Include="Assets\Scripts\Shop\ShopUnlocker.cs" />
@@ -53,7 +53,7 @@
      <Compile Include="Assets\Singletons\PlayerSingleton.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemsUse.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHealthbar.cs" />
-     <Compile Include="Assets\Scripts\StatsController.cs" />
+     <Compile Include="Assets\Scripts\Player\StatsController.cs" />
      <Compile Include="Assets\Scripts\Quests\GameEvent.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -71,7 +71,7 @@
      <Compile Include="Assets\Scripts\Inventory\MostrarInfoObjecto.cs" />
      <Compile Include="Assets\WeaponScript.cs" />
      <Compile Include="Assets\Scripts\Sleep\Sleep.cs" />
-     <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Shop\ShopItems.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -86,9 +86,9 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\Scripts\TopDownController.cs" />
+     <Compile Include="Assets\Scripts\Player\TopDownController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-     <Compile Include="Assets\Scripts\Window_QuestPointer.cs" />
+     <Compile Include="Assets\Scripts\Quests\Window_QuestPointer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\Scripts\Combat\Bow\AimShootBow.cs" />
      <Compile Include="Assets\Scripts\Inventory\Items\Wood.cs" />
@@ -97,12 +97,12 @@
      <Compile Include="Assets\Scripts\NPC\SellerIA.cs" />
      <Compile Include="Assets\Scripts\Combat\Bow\ArrowForce.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
-     <Compile Include="Assets\Scripts\PlayerInput.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
      <Compile Include="Assets\Scripts\Transitions\TransitionArea.cs" />
      <Compile Include="Assets\Scripts\Transitions\Transition.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameSaver\SaveManager.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameSaver\GameData.cs" />
@@ -128,7 +128,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Scripts\Casa\HouseController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Scripts\PointerHandler.cs" />
+     <Compile Include="Assets\Scripts\Player\PointerHandler.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
