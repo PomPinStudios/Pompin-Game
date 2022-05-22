@@ -16,17 +16,7 @@ public class QuestManager : MonoBehaviour
     {
         foreach (var quest in CurrentQuests)
         {
-            quest.Initialize();
-            quest.QuestCompleted.AddListener(OnQuestCompleted);
-
-            GameObject questObj = Instantiate(questPrefab, questsContent);
-            questObj.transform.Find("Icon").GetComponent<Image>().sprite = quest.Information.Icon;
-
-            questObj.GetComponent<Button>().onClick.AddListener(delegate
-            {
-                questHolder.GetComponent<QuestWindow>().Initialize(quest);
-                questHolder.SetActive(true);
-            });
+            addQuest(quest);
         }
     }
 
@@ -38,5 +28,20 @@ public class QuestManager : MonoBehaviour
     private void OnQuestCompleted(Quest quest)
     {
         questsContent.GetChild(CurrentQuests.IndexOf(quest)).Find("Checkmark").gameObject.SetActive(true);
+    }
+
+    public void addQuest(Quest quest)
+    {
+            quest.Initialize();
+            quest.QuestCompleted.AddListener(OnQuestCompleted);
+
+            GameObject questObj = Instantiate(questPrefab, questsContent);
+            questObj.transform.Find("Icon").GetComponent<Image>().sprite = quest.Information.Icon;
+
+            questObj.GetComponent<Button>().onClick.AddListener(delegate
+            {
+                questHolder.GetComponent<QuestWindow>().Initialize(quest);
+                questHolder.SetActive(true);
+            });
     }
 }

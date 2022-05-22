@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: peluquin
   m_EditorClassIdentifier: 
   Information:
-    Name: Repara la casa
-    Icon: {fileID: 0}
-    Description: Has encontrado una casa abandonada, consigue materiales y reparala.
+    Name: Encontrar Peluquin
+    Icon: {fileID: 21300000, guid: bc96b9d6dbec7b84b9544780a40fcd70, type: 3}
+    Description: "Despues de hablar con el tendero del pueblo, te pide que encuentre
+      su peluqu\xEDn"
   Reward:
     Currency: 10
     XP: 10
@@ -37,4 +38,4 @@ MonoBehaviour:
   GoalCompleted:
     m_PersistentCalls:
       m_Calls: []
-  Building: Casa
+  Building: Tienda

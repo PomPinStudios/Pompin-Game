@@ -13,10 +13,14 @@ public class ShopUnlocker : MonoBehaviour
     private GameObject[] slots;
     private ShowHideShop showHideShop;
     public GameObject dialog;
+    public Quest questPeluquin;
+    private QuestManager questManager;
+    private bool addQuest = true;
     
     // Start is called before the first frame update
     void Start()
     {
+        questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
         inventorySingleton = InventorySingleton.instance;
         inventory = inventorySingleton.GetComponent<Inventory>();
         slots = inventory.slots;
@@ -33,7 +37,14 @@ public class ShopUnlocker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogue.firstInteraction) searchObject();
+        if(dialogue.firstInteraction) {
+            searchObject();
+        } 
+            
+        if(addQuest && dialogue.firstInteraction){
+            questManager.addQuest(questPeluquin);
+            addQuest = false;
+        } 
     }
 
     private bool hasHair;
@@ -55,6 +66,7 @@ public class ShopUnlocker : MonoBehaviour
                 {e.ToString();}
                 if(dialogue.finishSpeaking)
                 {
+                    EventManager.Instance.QueueEvent(new BuildingGameEvent("Tienda"));
                     showHideShop.enabled = true;
                     showHideShop.onColission = true;
                     this.enabled = false;
