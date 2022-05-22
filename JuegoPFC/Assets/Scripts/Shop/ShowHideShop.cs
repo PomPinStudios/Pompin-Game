@@ -11,7 +11,8 @@ public class ShowHideShop : MonoBehaviour
     private ShowHideInventory showHideInventory;
 
     private bool shown = false;
-    private bool onColission = false;
+    [HideInInspector]
+    public bool onColission = false;
     public bool afterClose = false;
 
     private void Start() {

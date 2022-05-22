@@ -43,21 +43,25 @@ public class ShopUnlocker : MonoBehaviour
         {
             if (hasHair)
             {
+                dialogue.enabled = false;
                 dialogueElements.Clear();
                 dialogueElements.Add("Tendero: Muchas Gracias joven");
                 dialogueElements.Add("Tendero: Ahora puedas usar mi tienda cuando quieras");
                 dialogueElements.Add("Tendero: Hasta pronto");
+                dialogue.startDialogue();
                 try{
                     inventory.UseInventoryItems(item.name, 1);
                 }catch (Exception e)
-                {}
+                {e.ToString();}
                 if(dialogue.finishSpeaking)
                 {
                     showHideShop.enabled = true;
-                    dialogue.enabled = false;
+                    showHideShop.onColission = true;
                     this.enabled = false;
                 }
-            }else{
+            }
+            else
+            {
                 dialogueElements.Clear();
                 dialogueElements.Add("Tendero: Encuentra mi pelo");
                 dialogueElements.Add("Tendero: Hasta entonces no abriré la tienda");

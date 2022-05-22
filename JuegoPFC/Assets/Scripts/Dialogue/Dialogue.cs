@@ -23,7 +23,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
-        dialogue();
+        startDialogue();
     }
 
     public void StartDialogue()
@@ -81,7 +81,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public void dialogue()
+    public void startDialogue()
     {
         if(isPlayerInRange && Input.GetButtonDown("Interactive"))
         {
