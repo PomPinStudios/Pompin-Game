@@ -13,8 +13,18 @@ public class QuestWindow : MonoBehaviour
     [SerializeField] private Text xpText;
     [SerializeField] private Text coinsText;
 
+    private Quest questTemp;
+
     public void Initialize(Quest quest)
     {
+        if(questTemp == quest)
+        {
+            Debug.Log("iguales");
+            return;
+        }else{
+            CloseWindow();
+        }
+        questTemp = quest;
         titleText.text = quest.Information.Name;
         descriptionText.text = quest.Information.Description;
 
@@ -53,6 +63,7 @@ public class QuestWindow : MonoBehaviour
 
     public void CloseWindow()
     {
+        questTemp = null;
         gameObject.SetActive(false);
 
         for (int i = 0; i < goalsContent.childCount; i++)

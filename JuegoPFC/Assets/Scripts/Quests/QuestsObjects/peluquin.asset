@@ -21,8 +21,8 @@ MonoBehaviour:
     Currency: 10
     XP: 10
   Goals:
-  - {fileID: 7066697532339074800}
---- !u!114 &7066697532339074800
+  - {fileID: 631924245269310428}
+--- !u!114 &631924245269310428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31,11 +31,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a611919481d62c4b99f854da7a4c4bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 24ad6836c32887b4992c40b5b26f7a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   RequiredAmount: 1
   GoalCompleted:
     m_PersistentCalls:
       m_Calls: []
-  Building: Tienda
+  Object: Peluquin
+--- !u!114 &7427672485372950188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ad6836c32887b4992c40b5b26f7a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RequiredAmount: 1
+  GoalCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  Object: 

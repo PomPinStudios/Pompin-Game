@@ -66,7 +66,7 @@ public class ShopUnlocker : MonoBehaviour
                 {e.ToString();}
                 if(dialogue.finishSpeaking)
                 {
-                    EventManager.Instance.QueueEvent(new BuildingGameEvent("Tienda"));
+                    EventManager.Instance.QueueEvent(new ObjectsGameEvent("Peluquin"));
                     showHideShop.enabled = true;
                     showHideShop.onColission = true;
                     this.enabled = false;

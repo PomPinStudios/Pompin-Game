@@ -15,3 +15,11 @@ public class BuildingGameEvent : GameEvent
         BuildingName = name;
     }
 }
+
+public class ObjectsGameEvent : GameEvent
+{
+    public ObjectsGameEvent(string name)
+    {
+        EventDescription = name;
+    }
+}
