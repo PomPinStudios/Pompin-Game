@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroCutscene.unity
     guid: 3c1706be531ba304a8be10ae1c0b9594
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: ed90b74ed623a3f4a9042362706661d2
+  - enabled: 1
+    path: Assets/Scenes/Dungeon1.unity
+    guid: b2e39b64cba44fb459aef6a1fad1fedd
   m_configObjects: {}

@@ -49,9 +49,15 @@ TagManager:
   - name: Entorno
     uniqueID: 3868462683
     locked: 0
+  - name: Pared
+    uniqueID: 562997749
+    locked: 0
   - name: Player
     uniqueID: 3193909087
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ParedAbajo
+    uniqueID: 3362706487
     locked: 0
