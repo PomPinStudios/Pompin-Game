@@ -18,6 +18,8 @@ public class Transition : MonoBehaviour
     CameraConfiner cameraConfiner;
     Transform destination;
 
+    public AudioSource clip;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class Transition : MonoBehaviour
         switch(transitionType)
         {
             case TransitionType.Warp:
+                clip.Play();
                 StartCoroutine(Tint(toTransition));
                 break;
             case TransitionType.Scene:

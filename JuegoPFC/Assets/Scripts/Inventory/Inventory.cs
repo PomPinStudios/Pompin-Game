@@ -15,6 +15,8 @@ public class Inventory : MonoBehaviour
     GameData gameData;
     public bool cargando = false;
 
+     public AudioSource clip;
+
     private void Start()
     {
         if (itemList != null)
@@ -47,6 +49,7 @@ public class Inventory : MonoBehaviour
                     inventoryItems.Add(itemName, itemAmount);
                     text = slots[i].GetComponentInChildren<TextMeshProUGUI>();
                     text.text = itemAmount.ToString();
+                    clip.Play();
                     break;
                 }
                 else
@@ -66,6 +69,7 @@ public class Inventory : MonoBehaviour
                                 inventoryItems[itemName] += itemAmount;
                                 text = slots[j].GetComponentInChildren<TextMeshProUGUI>();
                                 text.text = inventoryItems[itemName].ToString();
+                                clip.Play();
                                 break;
                             }
                         }

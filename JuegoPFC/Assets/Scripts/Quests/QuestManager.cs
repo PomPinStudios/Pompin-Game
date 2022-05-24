@@ -12,6 +12,8 @@ public class QuestManager : MonoBehaviour
 
     public List<Quest> CurrentQuests;
 
+    public AudioSource clip;
+
     private void Awake()
     {
         foreach (var quest in CurrentQuests)
@@ -32,6 +34,7 @@ public class QuestManager : MonoBehaviour
 
     private void OnQuestCompleted(Quest quest)
     {
+        clip.Play();
         questsContent.GetChild(CurrentQuests.IndexOf(quest)).Find("Checkmark").gameObject.SetActive(true);
     }
 

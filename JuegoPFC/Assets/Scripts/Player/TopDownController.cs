@@ -19,6 +19,7 @@ public class TopDownController : MonoBehaviour
     public float dashDuration;
     private float runningDashDuration;
     private bool dashUp;
+    public AudioSource clip;
 
     Vector2 direction;
 
@@ -88,6 +89,7 @@ public class TopDownController : MonoBehaviour
         //Activa la duracion del dash si el cooldown ha acabado
         if (Input.GetAxis("Dash") == 1 && dashUp)
         {
+            clip.Play();
             runningDashCooldown = dashCooldown;
             runningDashDuration = dashDuration;
             dashUp = false;
