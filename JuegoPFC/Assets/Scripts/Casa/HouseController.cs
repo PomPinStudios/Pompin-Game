@@ -19,8 +19,23 @@ public class HouseController : MonoBehaviour
     private bool primeraInteraccion;
     private bool inColision;
 
+    public Quest questRepairHouse;
+    private QuestManager questManager; 
+    private bool addQuest = true;
+
+    private QuestsController questsController;
+
     void Start()
     {
+        questsController = GameObject.Find("GameManager").GetComponent<QuestsController>();
+        if(questsController.casaRepair)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = repairHouse;
+            Destroy(gameObject.transform.Find("Nota").gameObject);
+            gameObject.transform.Find("Door").gameObject.SetActive(true);
+            transitionHouse.SetActive(true);
+        }
+        questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
         inventorySingleton = InventorySingleton.instance;
         inventory = inventorySingleton.GetComponent<Inventory>();
         slots = inventory.slots;
@@ -40,6 +55,11 @@ public class HouseController : MonoBehaviour
         }
 
         if(inColision && dialogue.firstInteraction) { RepairHouse(); }
+
+        if(addQuest && dialogue.firstInteraction){
+            questManager.addQuest(questRepairHouse);
+            addQuest = false;
+        }
     }
     private int woodCount;
     private Transform item;
@@ -57,6 +77,7 @@ public class HouseController : MonoBehaviour
         {
             if (woodCount >= 3)
             {
+                questsController.casaRepair = true;
                 gameObject.GetComponent<SpriteRenderer>().sprite = repairHouse;
                 Destroy(gameObject.transform.Find("Nota").gameObject);
                 inventory.UseInventoryItems(item.name, 3);

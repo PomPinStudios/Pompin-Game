@@ -17,9 +17,11 @@ public class ShopUnlocker : MonoBehaviour
     private QuestManager questManager;
     private bool addQuest = true;
     
-    // Start is called before the first frame update
+    private QuestsController questsController;
+
     void Start()
     {
+        questsController = GameObject.Find("GameManager").GetComponent<QuestsController>();
         questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
         inventorySingleton = InventorySingleton.instance;
         inventory = inventorySingleton.GetComponent<Inventory>();
@@ -27,6 +29,18 @@ public class ShopUnlocker : MonoBehaviour
         showHideShop = gameObject.GetComponent<ShowHideShop>();
         dialogue = gameObject.GetComponentInChildren<Dialogue>();
         dialogueElements = dialogue.dialogueLines;
+        if(questsController.tiendaDesbloqueda)
+        {
+            dialogue.enabled = false;
+            showHideShop.enabled = true;
+            showHideShop.onColission = true;
+            this.enabled = false;
+            showHideShop.Start();
+            showHideShop.showHideInventory.shopOpen = true;
+            showHideShop.playerInventory.GetComponent<Canvas>().enabled = false;
+            showHideShop.showHideInventory.stats.SetActive(false);
+            showHideShop.showHideInventory.shown = false;
+        }
         dialogueElements.Add("Tendero: Buenos dias joven, necesito que me ayudes a recuperar algo especial para mi.");
         dialogueElements.Add("Tendero: Necesito que encuentres mi peluquín, que sin el me siento raro.");
         dialogueElements.Add("Tendero: La ultima vez que lo vi, fue en el campo de trigo que esta al sur del pueblo");
@@ -75,6 +89,7 @@ public class ShopUnlocker : MonoBehaviour
                     showHideShop.playerInventory.GetComponent<Canvas>().enabled = false;
                     showHideShop.showHideInventory.stats.SetActive(false);
                     showHideShop.showHideInventory.shown = false;
+                    questsController.tiendaDesbloqueda = true;
                 }
             }
             else

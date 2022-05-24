@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\Shop\ShopUnlocker.cs" />
      <Compile Include="Assets\Scripts\Shop\ShowHideShop.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\Scripts\SceneChange\QuestsController.cs" />
      <Compile Include="Assets\Scripts\Sleep\SleepArea.cs" />
      <Compile Include="Assets\Scripts\Inventory\SlotsScript.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemList.cs" />
@@ -131,6 +132,7 @@
      <Compile Include="Assets\Scripts\Casa\HouseController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Scripts\Player\PointerHandler.cs" />
+     <Compile Include="Assets\Scripts\SceneChange\ObjectSpawnController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
