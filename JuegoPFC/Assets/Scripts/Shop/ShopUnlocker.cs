@@ -33,13 +33,8 @@ public class ShopUnlocker : MonoBehaviour
         {
             dialogue.enabled = false;
             showHideShop.enabled = true;
-            showHideShop.onColission = true;
+            showHideShop.onColission = false;
             this.enabled = false;
-            showHideShop.Start();
-            showHideShop.showHideInventory.shopOpen = true;
-            showHideShop.playerInventory.GetComponent<Canvas>().enabled = false;
-            showHideShop.showHideInventory.stats.SetActive(false);
-            showHideShop.showHideInventory.shown = false;
         }
         dialogueElements.Add("Tendero: Buenos dias joven, necesito que me ayudes a recuperar algo especial para mi.");
         dialogueElements.Add("Tendero: Necesito que encuentres mi peluquín, que sin el me siento raro.");

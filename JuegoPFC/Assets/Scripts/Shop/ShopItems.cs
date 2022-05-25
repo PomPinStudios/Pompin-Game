@@ -21,11 +21,10 @@ public class ShopItems : MonoBehaviour
 
     public Quest mazmorraQuest;
     private QuestManager questManager;
-    private MostrarInfoObjecto mostrarInfoObjecto;
 
     void Start()
     {
-        mostrarInfoObjecto = GetComponent<MostrarInfoObjecto>();
+        
         questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
         inventorySingleton = InventorySingleton.instance;
         inventory = inventorySingleton.GetComponent<Inventory>();
@@ -52,6 +51,7 @@ public class ShopItems : MonoBehaviour
                 {
                     if(t.GetChild(0).name == "DungeonKey (Store)")
                     {
+                        MostrarInfoObjecto mostrarInfoObjecto = GetComponent<MostrarInfoObjecto>();
                         mostrarInfoObjecto.panel.GetComponent<Image>().enabled = false;
                         mostrarInfoObjecto.TextTipo.enabled = false;
                         mostrarInfoObjecto.TextNombre.enabled = false;

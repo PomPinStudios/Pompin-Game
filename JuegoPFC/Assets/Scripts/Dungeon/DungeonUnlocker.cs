@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DungeonUnlocker : MonoBehaviour
 {
-    private bool onCollision;
+    [HideInInspector]
+    public bool onCollision;
+    
     private bool moveFountain;
     GameObject fountain;
     private SceneChangeController sceneChangeController;
