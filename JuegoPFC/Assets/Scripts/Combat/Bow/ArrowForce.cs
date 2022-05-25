@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArrowForce : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Animator aimAnimator;
+    public Animator aimAnimator;
     void Start()
     {
         aimAnimator = transform.GetComponent<Animator>();
