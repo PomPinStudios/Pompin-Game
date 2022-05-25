@@ -13,6 +13,7 @@ public class DungeonUnlocker : MonoBehaviour
     [HideInInspector]
     public bool keyUsed;
     public AudioSource clip;
+    public PolygonCollider2D collider; 
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class DungeonUnlocker : MonoBehaviour
     void Update()
     {
         if(onCollision && keyUsed){
+            collider.enabled = false;
             clip.Play();
             sceneChangeController.fountainMove = true;
             moveFountain = true;
