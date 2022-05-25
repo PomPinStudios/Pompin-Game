@@ -23,3 +23,11 @@ public class ObjectsGameEvent : GameEvent
         EventDescription = name;
     }
 }
+
+public class PlacesGameEvent : GameEvent
+{
+    public PlacesGameEvent(string name)
+    {
+        EventDescription = name;
+    }
+}

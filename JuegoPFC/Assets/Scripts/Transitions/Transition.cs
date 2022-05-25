@@ -40,6 +40,7 @@ public class Transition : MonoBehaviour
                 StartCoroutine(Tint(toTransition));
                 break;
             case TransitionType.Scene:
+                Debug.Log(sceneNameToTransition); 
                 GameSceneManager.instance.InitSwitchScene(sceneNameToTransition, targetPosition);
                 break;
         }

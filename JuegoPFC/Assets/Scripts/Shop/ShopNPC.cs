@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShopNPC : MonoBehaviour
 {
 
-    public GameObject[] itemInStore;
+    public List<GameObject> itemInStore;
     public GameObject shopCanvas;
     Inventory inventory;
     public bool sellItems;
@@ -13,6 +13,7 @@ public class ShopNPC : MonoBehaviour
     public GameObject playerInventory;
     private bool shown = false;
     private bool onColission = false;
+    public GameObject itemHolder;
     private void Start() 
     {
         inventory = gameObject.GetComponent<Inventory>();
@@ -31,7 +32,7 @@ public class ShopNPC : MonoBehaviour
     }
     private void SetUpStore()
     {
-        for (int i = 0; i < itemInStore.Length; i++)
+        for (int i = 0; i < itemInStore.Count; i++)
         {
             GameObject itemToSell = Instantiate(itemInStore[i], inventory.slots[i].transform.position, Quaternion.identity);
             itemToSell.transform.SetParent(inventory.slots[i].transform, false);

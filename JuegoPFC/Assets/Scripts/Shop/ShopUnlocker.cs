@@ -17,11 +17,11 @@ public class ShopUnlocker : MonoBehaviour
     private QuestManager questManager;
     private bool addQuest = true;
     
-    private QuestsController questsController;
+    private SceneChangeController sceneChangeController;
 
     void Start()
     {
-        questsController = GameObject.Find("GameManager").GetComponent<QuestsController>();
+        sceneChangeController = GameObject.Find("GameManager").GetComponent<SceneChangeController>();
         questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
         inventorySingleton = InventorySingleton.instance;
         inventory = inventorySingleton.GetComponent<Inventory>();
@@ -29,7 +29,7 @@ public class ShopUnlocker : MonoBehaviour
         showHideShop = gameObject.GetComponent<ShowHideShop>();
         dialogue = gameObject.GetComponentInChildren<Dialogue>();
         dialogueElements = dialogue.dialogueLines;
-        if(questsController.tiendaDesbloqueda)
+        if(sceneChangeController.tiendaDesbloqueda)
         {
             dialogue.enabled = false;
             showHideShop.enabled = true;
@@ -89,7 +89,7 @@ public class ShopUnlocker : MonoBehaviour
                     showHideShop.playerInventory.GetComponent<Canvas>().enabled = false;
                     showHideShop.showHideInventory.stats.SetActive(false);
                     showHideShop.showHideInventory.shown = false;
-                    questsController.tiendaDesbloqueda = true;
+                    sceneChangeController.tiendaDesbloqueda = true;
                 }
             }
             else

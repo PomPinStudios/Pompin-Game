@@ -90,7 +90,10 @@ public class Quest : ScriptableObject
         Completed = Goals.All(g => g.Completed);
         if (Completed)
         {
-            //Dar recompensa
+            GameObject player = GameObject.Find("Player");
+            PlayerStats ps = player.GetComponent<PlayerStats>();
+            ps.UpdateMoney(Reward.Currency);
+            ps.UpdateExp(Reward.XP);
             QuestCompleted.Invoke(this);
             QuestCompleted.RemoveAllListeners();
         }

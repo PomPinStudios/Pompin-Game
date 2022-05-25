@@ -21,10 +21,15 @@ public class ShowHideInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if(!shopOpen){
-                inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
-                stats.SetActive(!shown);
-                shown = !shown;
+                closeOpenPanels();
             }
         }
+    }
+
+    public void closeOpenPanels()
+    {
+        inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
+        stats.SetActive(!shown);
+        shown = !shown;
     }
 }

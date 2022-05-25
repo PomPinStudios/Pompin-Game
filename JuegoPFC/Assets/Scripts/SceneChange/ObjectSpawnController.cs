@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class ObjectSpawnController : MonoBehaviour
 {
-    private QuestsController questsController;
+    private SceneChangeController sceneChangeController;
 
     void Start()
     {
-        questsController = GameObject.Find("GameManager").GetComponent<QuestsController>();
+        sceneChangeController = GameObject.Find("GameManager").GetComponent<SceneChangeController>();
         switch (gameObject.name)
         {
             case "Wood":
-                if(questsController.wood1)
+                if(sceneChangeController.wood1)
                 {
                     Destroy(gameObject);
                 }
                 break;
             case "Wood (1)":
-                if(questsController.wood2)
+                if(sceneChangeController.wood2)
                 {
                     Destroy(gameObject);
                 }
                 break;
             case "Wood (2)":
-                if(questsController.wood3)
+                if(sceneChangeController.wood3)
                 {
                     Destroy(gameObject);
                 }
                 break;
             case "Peluquin":
-                if(questsController.peluquinRecogido)
+                if(sceneChangeController.peluquinRecogido)
                 {
                     Destroy(gameObject);
                 }
@@ -48,19 +48,19 @@ public class ObjectSpawnController : MonoBehaviour
             {
                 case "Wood":
                     Debug.Log("1");
-                    questsController.wood1 = true;
+                    sceneChangeController.wood1 = true;
                     break;
                 case "Wood (1)":
                     Debug.Log("2");
-                    questsController.wood2 = true;
+                    sceneChangeController.wood2 = true;
                     break;
                 case "Wood (2)":
                     Debug.Log("3");
-                    questsController.wood3 = true;
+                    sceneChangeController.wood3 = true;
                     break;
                 case "Peluquin":
                     Debug.Log("Peluquin");
-                    questsController.peluquinRecogido = true;
+                    sceneChangeController.peluquinRecogido = true;
                     break;
 
             }

@@ -23,12 +23,12 @@ public class HouseController : MonoBehaviour
     private QuestManager questManager; 
     private bool addQuest = true;
 
-    private QuestsController questsController;
+    private SceneChangeController sceneChangeController;
 
     void Start()
     {
-        questsController = GameObject.Find("GameManager").GetComponent<QuestsController>();
-        if(questsController.casaRepair)
+        sceneChangeController = GameObject.Find("GameManager").GetComponent<SceneChangeController>();
+        if(sceneChangeController.casaRepair)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = repairHouse;
             Destroy(gameObject.transform.Find("Nota").gameObject);
@@ -77,7 +77,7 @@ public class HouseController : MonoBehaviour
         {
             if (woodCount >= 3)
             {
-                questsController.casaRepair = true;
+                sceneChangeController.casaRepair = true;
                 gameObject.GetComponent<SpriteRenderer>().sprite = repairHouse;
                 Destroy(gameObject.transform.Find("Nota").gameObject);
                 inventory.UseInventoryItems(item.name, 3);
