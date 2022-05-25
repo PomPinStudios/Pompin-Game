@@ -12,6 +12,8 @@ public class DungeonUnlocker : MonoBehaviour
     private SceneChangeController sceneChangeController;
     [HideInInspector]
     public bool keyUsed;
+    public AudioSource clip;
+
     void Start()
     {
         sceneChangeController = GameObject.Find("GameManager").GetComponent<SceneChangeController>();
@@ -25,6 +27,7 @@ public class DungeonUnlocker : MonoBehaviour
     void Update()
     {
         if(onCollision && keyUsed){
+            clip.Play();
             sceneChangeController.fountainMove = true;
             moveFountain = true;
         }
