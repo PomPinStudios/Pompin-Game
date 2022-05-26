@@ -36,6 +36,10 @@ public class LevelManager : MonoBehaviour
         this.ReturnGame();
     }
 
+    public void ReturnTittle()
+    {
+        SceneManager.LoadScene("Tittle");
+    }
 
     public void ExitTittle()
     {
