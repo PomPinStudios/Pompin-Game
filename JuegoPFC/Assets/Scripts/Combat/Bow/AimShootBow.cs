@@ -21,7 +21,7 @@ public class AimShootBow : MonoBehaviour
     {
         aimTransform = transform.Find("Aim");
         aimAnimator = aimTransform.GetComponent<Animator>();
-        playerAnimator = this.transform.GetComponent<Animator>();
+        playerAnimator = transform.root.GetComponent<Animator>();
         shootForce = 15;
 
         playerArrows = 30;
@@ -131,6 +131,8 @@ public class AimShootBow : MonoBehaviour
             aimAnimator.SetBool("Aim", true);
             aimAnimator.SetBool("Shoot", false);
             playerAnimator.SetBool("AimIdle", true);
+            playerAnimator.SetBool("Aim", true);
+            playerAnimator.SetBool("Shoot", false);
         }
         if (Input.GetButtonUp("FireArrow"))
         {
@@ -148,6 +150,8 @@ public class AimShootBow : MonoBehaviour
 
             aimAnimator.SetBool("Shoot", true);
             aimAnimator.SetBool("Aim", false);
+            playerAnimator.SetBool("Shoot", true);
+            playerAnimator.SetBool("Aim", false);
             playerAnimator.SetBool("AimIdle", false);
 
             shootForce = 0f;
