@@ -5,4 +5,5 @@ using UnityEngine;
 public static class ShouldLoadInventary
 {
     public static bool shouldLoadInventory = false;
+    public static bool gameStart = false;
 }

@@ -7,7 +7,7 @@ public class Dialogue : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueMark;
 
-    [SerializeField, TextArea(4,6)] public List<string> dialogueLines;
+    [SerializeField, TextArea(4, 6)] public List<string> dialogueLines;
 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
@@ -39,7 +39,7 @@ public class Dialogue : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        if(lineIndex < dialogueLines.Count)
+        if (lineIndex < dialogueLines.Count)
         {
             StartCoroutine(ShowLine());
         }
@@ -67,7 +67,8 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if  (collision.gameObject.CompareTag("Player")){
+        if (collision.gameObject.CompareTag("Player"))
+        {
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
         }
@@ -75,7 +76,8 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if  (collision.gameObject.CompareTag("Player")){
+        if (collision.gameObject.CompareTag("Player"))
+        {
             isPlayerInRange = false;
             dialogueMark.SetActive(false);
         }
@@ -83,7 +85,7 @@ public class Dialogue : MonoBehaviour
 
     public void startDialogue()
     {
-        if(isPlayerInRange && Input.GetButtonDown("Interactive"))
+        if (isPlayerInRange && Input.GetButtonDown("Interactive"))
         {
             finishSpeaking = false;
             if (!didDialogueStart)
@@ -101,5 +103,4 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
-    
 }
