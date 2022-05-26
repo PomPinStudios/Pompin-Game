@@ -45,18 +45,21 @@ public class TopDownController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = playerInput.horizontalAxis;
-        vertical = playerInput.verticalAxis;
+        if(!GameManager.instance.stop)
+        {
+            horizontal = playerInput.horizontalAxis;
+            vertical = playerInput.verticalAxis;
 
 
-        if (horizontal != 0 || vertical != 0)
-        {
-            SetXYAnimator();
-            animator.SetBool("Running", true);
-        }
-        else
-        {
-            animator.SetBool("Running", false);
+            if (horizontal != 0 || vertical != 0)
+            {
+                SetXYAnimator();
+                animator.SetBool("Running", true);
+            }
+            else
+            {
+                animator.SetBool("Running", false);
+            }
         }
 
         //Attack
@@ -69,32 +72,40 @@ public class TopDownController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        direction = new Vector2(horizontal, vertical).normalized;
-        body.velocity = direction * walkSpeed;
+        if(!GameManager.instance.stop)
+        {
+            direction = new Vector2(horizontal, vertical).normalized;
+            body.velocity = direction * walkSpeed;
 
-        //Dash
-        //Establece la duracion del dash
-        if (runningDashDuration > 0)
-        {
-            runningDashDuration -= Time.deltaTime;
-            body.velocity = direction * dashSpeed;
-        }
-        //Establece el cooldown del dash
-        if (runningDashCooldown > 0)
-        {
-            runningDashCooldown -= Time.deltaTime;
+            //Dash
+            //Establece la duracion del dash
+            if (runningDashDuration > 0)
+            {
+                runningDashDuration -= Time.deltaTime;
+                body.velocity = direction * dashSpeed;
+            }
+            //Establece el cooldown del dash
+            if (runningDashCooldown > 0)
+            {
+                runningDashCooldown -= Time.deltaTime;
+            }
+            else
+            {
+                dashUp = true;
+            }
+            //Activa la duracion del dash si el cooldown ha acabado
+            if (Input.GetAxis("Dash") == 1 && dashUp)
+            {
+                clip.Play();
+                runningDashCooldown = dashCooldown;
+                runningDashDuration = dashDuration;
+                dashUp = false;
+            }
+
         }
         else
         {
-            dashUp = true;
-        }
-        //Activa la duracion del dash si el cooldown ha acabado
-        if (Input.GetAxis("Dash") == 1 && dashUp)
-        {
-            clip.Play();
-            runningDashCooldown = dashCooldown;
-            runningDashDuration = dashDuration;
-            dashUp = false;
+           body.velocity = new Vector2(0,0); 
         }
     }
 

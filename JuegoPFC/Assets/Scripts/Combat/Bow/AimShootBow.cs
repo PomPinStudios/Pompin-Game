@@ -53,7 +53,7 @@ public class AimShootBow : MonoBehaviour
             }
             if (angle < 60 && angle > 30)
             {
-                horizontal = 0;
+                horizontal = 1;
                 vertical = 1;
             }
             if (angle < 30 && angle > 0)
@@ -133,6 +133,7 @@ public class AimShootBow : MonoBehaviour
             playerAnimator.SetBool("AimIdle", true);
             playerAnimator.SetBool("Aim", true);
             playerAnimator.SetBool("Shoot", false);
+            GameManager.instance.estarQuieto();
         }
         if (Input.GetButtonUp("FireArrow"))
         {
@@ -153,6 +154,9 @@ public class AimShootBow : MonoBehaviour
             playerAnimator.SetBool("Shoot", true);
             playerAnimator.SetBool("Aim", false);
             playerAnimator.SetBool("AimIdle", false);
+            GameManager.instance.NOestarQuieto();
+
+            
 
             shootForce = 0f;
         }

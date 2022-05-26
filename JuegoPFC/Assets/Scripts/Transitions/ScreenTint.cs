@@ -53,6 +53,7 @@ public class ScreenTint : MonoBehaviour
             Color c = image.color;
             c = Color.Lerp(unTintenColor, tintedColor, f);
             image.color = c;
+            GameManager.instance.estarQuieto();
 
             yield return new WaitForEndOfFrame();
         }
@@ -68,6 +69,7 @@ public class ScreenTint : MonoBehaviour
             Color c = image.color;
             c = Color.Lerp(tintedColor, unTintenColor, f);
             image.color = c;
+            GameManager.instance.NOestarQuieto();
 
             yield return new WaitForEndOfFrame();
         }

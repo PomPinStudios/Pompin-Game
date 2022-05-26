@@ -6,11 +6,14 @@ public class GameManager : MonoBehaviour
 {
     public Transform playerSpawnPoint;
     public GameObject player;
+    private Animator playerAnimator;
     public ScreenTint screenTint;
     public DayTimeController timeController;
     private static GameManager _instance;
     public static GameManager instance { get { return _instance; } }
     public GameObject playerPrefab;
+
+    public bool stop = false;
 
     private void Awake()
     {
@@ -30,6 +33,8 @@ public class GameManager : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = playerSpawnPoint.position;
+            playerAnimator = player.GetComponent<Animator>();
+
         }
         catch (System.Exception)
         {
@@ -38,6 +43,17 @@ public class GameManager : MonoBehaviour
                 player = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
             }
         }
+    }
+
+
+    public void estarQuieto()
+    {
+        stop = true;
+    }
+
+    public void NOestarQuieto()
+    {
+        stop = false;
     }
 
 }
