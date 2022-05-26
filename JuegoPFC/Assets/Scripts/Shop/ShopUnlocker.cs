@@ -17,6 +17,9 @@ public class ShopUnlocker : MonoBehaviour
     private QuestManager questManager;
     private bool addQuest = true;
 
+    public SpriteRenderer sprite;
+    public Sprite sprite2;
+
     private SceneChangeController sceneChangeController;
 
     void Start()
@@ -80,6 +83,8 @@ public class ShopUnlocker : MonoBehaviour
                 { e.ToString(); }
                 if (dialogue.finishSpeaking)
                 {
+                    sprite.sprite = sprite2;
+
                     EventManager.Instance.QueueEvent(new ObjectsGameEvent("Peluquin"));
                     showHideShop.enabled = true;
                     showHideShop.onColission = true;
