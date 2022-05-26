@@ -17,8 +17,9 @@ public class GameData : MonoBehaviour
     public SaveData saveData;
     public static GameData instance;
 
-    private void Awake() {
-        // Debug.Log("SA DEPERTAO");        
+    private void Awake()
+    {
+        Debug.Log("SA DEPERTAO");
         if (instance == null)
         {
             DontDestroyOnLoad(this.gameObject);
@@ -30,14 +31,23 @@ public class GameData : MonoBehaviour
             instance = this;
         }
         // Debug.Log(instance);   
-        if(File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
+        if (ShouldLoadInventary.shouldLoadInventory)
         {
-            Load();
+            Time.timeScale = 1f;
+            if (File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
+            {
+                Load();
+            }
+            else
+            {
+                Save();
+            }
         }
         else
         {
             Save();
         }
+
     }
 
     public void Save()
@@ -48,7 +58,7 @@ public class GameData : MonoBehaviour
         SaveData data = new SaveData();
         data = saveData;
 
-        formatter.Serialize(file,data);
+        formatter.Serialize(file, data);
         print("Data Saved");
 
         file.Close();
@@ -56,8 +66,10 @@ public class GameData : MonoBehaviour
 
     public void Load()
     {
-        if(File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
+        Debug.Log("LOAD");
+        if (File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
         {
+            Debug.Log("SI QUE EXISTE");
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/playerInventory.dat", FileMode.Open);
 
@@ -70,7 +82,7 @@ public class GameData : MonoBehaviour
 
     public void ClearData()
     {
-        if(File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
+        if (File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
         {
             File.Delete(Application.persistentDataPath + "/playerInventory.dat");
         }
@@ -82,5 +94,11 @@ public class GameData : MonoBehaviour
         saveData.inventoryItemsName.Clear();
         saveData.inventoryItemsAmount.Clear();
         Save();
+    }
+
+    public void DestroyInstance()
+    {
+        Destroy(instance.gameObject);
+        instance = null;
     }
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public DayTimeController timeController;
     private static GameManager _instance;
     public static GameManager instance { get { return _instance; } }
+    public GameObject playerPrefab;
 
     private void Awake()
     {
@@ -17,12 +18,27 @@ public class GameManager : MonoBehaviour
         {
             _instance = this;
         }
+        if (player == null)
+        {
+            player = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
+        }
     }
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        player.transform.position = playerSpawnPoint.position;
+        try
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            player.transform.position = playerSpawnPoint.position;
+        }
+        catch (System.Exception)
+        {
+            if (player == null)
+            {
+                player = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
+            }
+        }
     }
+
 }
 

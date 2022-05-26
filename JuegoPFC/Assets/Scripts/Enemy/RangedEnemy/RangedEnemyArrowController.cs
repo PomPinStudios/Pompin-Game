@@ -31,10 +31,8 @@ public class RangedEnemyArrowController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("HOLAAAAAAA TRIGGER " + other.tag);
         if (other.tag != "Arrow" && other.tag != "RangedEnemy" && other.tag != "Player")
         {
-            Debug.Log("CHOCAR EN EL TRIGGER" + other.tag);
             hasHit = true;
             rb.velocity = Vector2.zero;
             rb.isKinematic = true;
@@ -51,21 +49,17 @@ public class RangedEnemyArrowController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("HOLAAAAAAA");
         if (other.gameObject.tag == "RangedEnemy")
         {
-            Debug.Log("Choca con ranged");
             Debug.Log(other.gameObject.tag);
             other.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
 
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Choca con player primer if");
             GameObject attackedObject = other.gameObject;
             if (attackedObject.tag == "Player")
             {
-                Debug.Log("Choca con player segundo if");
                 attackedObject.GetComponent<PlayerStats>().UpdateHealth(-20);
             }
             Destroy(gameObject);
