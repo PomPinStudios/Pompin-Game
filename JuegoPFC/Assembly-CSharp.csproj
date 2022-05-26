@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\Dungeon\OpenDungeonWithKey.cs" />
      <Compile Include="Assets\Scripts\Combat\Bow\CrossHairController.cs" />
      <Compile Include="Assets\Scripts\Player\PickUpItem.cs" />
+     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedArrowForce.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestWindow.cs" />
      <Compile Include="Assets\Scripts\Shop\ShopUnlocker.cs" />
@@ -109,6 +110,7 @@
      <Compile Include="Assets\Scripts\Transitions\TransitionArea.cs" />
      <Compile Include="Assets\Scripts\Transitions\Transition.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedEnemyAI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\Player\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameSaver\SaveManager.cs" />
@@ -126,6 +128,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\Shop\ShopNPC.cs" />
+     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedEnemyShootBow.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
@@ -137,9 +140,7 @@
      <Compile Include="Assets\Scripts\Casa\HouseController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Scripts\Player\PointerHandler.cs" />
-     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedEnemyAI.cs" />
-     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedEnemyShootBow.cs" />
-     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedArrowForce.cs" />
+     <Compile Include="Assets\Scripts\Enemy\RangedEnemy\RangedEnemyArrowController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

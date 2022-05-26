@@ -16,19 +16,19 @@ public class RangedArrowForce : MonoBehaviour
     }
     void SecordFrame()
     {
-        RangedEnemyAI.shootForce = 7f;
+        RangedEnemyAI.shootForce = 5f;
     }
 
     void ThirdFrame()
     {
-        RangedEnemyAI.shootForce = 9f;
+        RangedEnemyAI.shootForce = 7f;
     }
     void FourthFrame()
     {
-        RangedEnemyAI.shootForce = 11f;
+        RangedEnemyAI.shootForce = 9f;
     }
     void FifthFrame()
     {
-        RangedEnemyAI.shootForce = 13f;
+        RangedEnemyAI.shootForce = 11f;
     }
 }

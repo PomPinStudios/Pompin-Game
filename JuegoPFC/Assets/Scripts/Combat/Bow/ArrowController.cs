@@ -84,7 +84,7 @@ public class ArrowController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag != "Arrow" && other.tag != "Enemy")
+        if (other.tag != "Arrow" && other.tag != "Enemy" && other.tag != "RangedEnemy")
         {
             hasHit = true;
             rb.velocity = Vector2.zero;
@@ -113,10 +113,10 @@ public class ArrowController : MonoBehaviour
             gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 
         }
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "RangedEnemy")
         {
             GameObject attackedObject = other.gameObject;
-            if (attackedObject.tag == "Enemy")
+            if (attackedObject.tag == "Enemy" || other.gameObject.tag == "RangedEnemy")
             {
                 attackedObject.GetComponent<EnemyStats>().takeDamage(25);
             }

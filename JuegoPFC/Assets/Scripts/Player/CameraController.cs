@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour
 {
     private CinemachineVirtualCamera cv;
     [HideInInspector] public GameObject player;
-    public GameObject prueba; 
+    public GameObject prueba;
 
     void Start()
     {
@@ -15,6 +15,5 @@ public class CameraController : MonoBehaviour
         Transform player = GameManager.instance.player.transform;
         cv.m_Follow = player;
     }
-    
 
 }
