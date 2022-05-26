@@ -12,25 +12,31 @@ public class ObjectSpawnController : MonoBehaviour
         switch (gameObject.name)
         {
             case "Wood":
-                if(sceneChangeController.wood1)
+                if (sceneChangeController.wood1)
                 {
                     Destroy(gameObject);
                 }
                 break;
             case "Wood (1)":
-                if(sceneChangeController.wood2)
+                if (sceneChangeController.wood2)
                 {
                     Destroy(gameObject);
                 }
                 break;
             case "Wood (2)":
-                if(sceneChangeController.wood3)
+                if (sceneChangeController.wood3)
                 {
                     Destroy(gameObject);
                 }
                 break;
             case "Peluquin":
-                if(sceneChangeController.peluquinRecogido)
+                if (sceneChangeController.peluquinRecogido)
+                {
+                    Destroy(gameObject);
+                }
+                break;
+            case "Sword":
+                if (sceneChangeController.espadaRecogida)
                 {
                     Destroy(gameObject);
                 }
@@ -61,6 +67,10 @@ public class ObjectSpawnController : MonoBehaviour
                 case "Peluquin":
                     Debug.Log("Peluquin");
                     sceneChangeController.peluquinRecogido = true;
+                    break;
+                case "Sword":
+                    Debug.Log("Sword");
+                    sceneChangeController.espadaRecogida = true;
                     break;
 
             }

@@ -9,6 +9,8 @@ public class SceneChangeController : MonoBehaviour
     [HideInInspector]
     public bool peluquinRecogido = false;
     [HideInInspector]
+    public bool espadaRecogida = false;
+    [HideInInspector]
     public bool tiendaDesbloqueda = true;
     [HideInInspector]
     public bool wood1 = false;

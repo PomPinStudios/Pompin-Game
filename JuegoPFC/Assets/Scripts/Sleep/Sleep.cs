@@ -8,11 +8,13 @@ public class Sleep : MonoBehaviour
     DayTimeController dayTime;
     GameObject player;
 
-    private void Awake() {
+    private void Awake()
+    {
         dayTime = GameManager.instance.timeController;
         player = gameObject;
     }
-    public void DoSleep(){
+    public void DoSleep()
+    {
         StartCoroutine(SleepRoutine());
     }
 
@@ -30,8 +32,8 @@ public class Sleep : MonoBehaviour
 
         dayTime.SkipToMorning();
 
-        player.GetComponent<PlayerStats>().health = 100f;
-        player.GetComponent<PlayerStats>().healthText.text = "100 / 100";
+        player.GetComponent<PlayerStats>().health = player.GetComponent<PlayerStats>().maxHealth;
+        player.GetComponent<PlayerStats>().healthText.text = player.GetComponent<PlayerStats>().health.ToString() + " / " + player.GetComponent<PlayerStats>().maxHealth.ToString();
 
         screenTint.UnTint();
 

@@ -8,27 +8,42 @@ public class BookSpriteChanger : MonoBehaviour
     public SpriteRenderer sprite;
     public Sprite spriteOpen;
     public Sprite spriteClose;
+    private bool addQuest = true;
+    private Dialogue dialogue;
+    private QuestManager questManager;
+    public Quest questEspada;
+
 
 
     void Start()
     {
-        
+        questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
+        dialogue = gameObject.GetComponent<Dialogue>();
     }
 
     void Update()
     {
-        if(onCollision){
+        if (onCollision)
+        {
             if (Input.GetButtonDown("Interactive"))
             {
                 sprite.sprite = spriteOpen;
-            } 
+            }
         }
-        if(!onCollision){
+        if (!onCollision)
+        {
             sprite.sprite = spriteClose;
+        }
+
+        if (addQuest && dialogue.firstInteraction)
+        {
+            questManager.addQuest(questEspada);
+            addQuest = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         onCollision = true;
     }
 
@@ -36,4 +51,6 @@ public class BookSpriteChanger : MonoBehaviour
     {
         onCollision = false;
     }
+
+
 }

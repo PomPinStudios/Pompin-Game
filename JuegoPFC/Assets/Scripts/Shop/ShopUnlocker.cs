@@ -16,7 +16,7 @@ public class ShopUnlocker : MonoBehaviour
     public Quest questPeluquin;
     private QuestManager questManager;
     private bool addQuest = true;
-    
+
     private SceneChangeController sceneChangeController;
 
     void Start()
@@ -29,7 +29,7 @@ public class ShopUnlocker : MonoBehaviour
         showHideShop = gameObject.GetComponent<ShowHideShop>();
         dialogue = gameObject.GetComponentInChildren<Dialogue>();
         dialogueElements = dialogue.dialogueLines;
-        if(sceneChangeController.tiendaDesbloqueda)
+        if (sceneChangeController.tiendaDesbloqueda)
         {
             dialogue.enabled = false;
             showHideShop.enabled = true;
@@ -46,19 +46,22 @@ public class ShopUnlocker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogue.firstInteraction) {
+        if (dialogue.firstInteraction)
+        {
             searchObject();
-        } 
-            
-        if(addQuest && dialogue.firstInteraction){
+        }
+
+        if (addQuest && dialogue.firstInteraction)
+        {
             questManager.addQuest(questPeluquin);
             addQuest = false;
-        } 
+        }
     }
 
     private bool hasHair;
     private Transform item;
-    void searchObject(){
+    void searchObject()
+    {
         if (Input.GetButtonDown("Interactive"))
         {
             if (hasHair)
@@ -69,11 +72,13 @@ public class ShopUnlocker : MonoBehaviour
                 dialogueElements.Add("Tendero: Ahora puedas usar mi tienda cuando quieras");
                 dialogueElements.Add("Tendero: Hasta pronto");
                 dialogue.startDialogue();
-                try{
+                try
+                {
                     inventory.UseInventoryItems(item.name, 1);
-                }catch (Exception e)
-                {e.ToString();}
-                if(dialogue.finishSpeaking)
+                }
+                catch (Exception e)
+                { e.ToString(); }
+                if (dialogue.finishSpeaking)
                 {
                     EventManager.Instance.QueueEvent(new ObjectsGameEvent("Peluquin"));
                     showHideShop.enabled = true;
@@ -93,7 +98,7 @@ public class ShopUnlocker : MonoBehaviour
                 dialogueElements.Add("Tendero: Encuentra mi pelo");
                 dialogueElements.Add("Tendero: Hasta entonces no abriré la tienda");
             }
-            
+
         }
         for (int i = 0; i < slots.Length; i++)
         {
