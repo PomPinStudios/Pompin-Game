@@ -11,11 +11,13 @@ public class SaveData
     public List<int> goToAddId = new List<int>();
     public List<int> inventoryItemsAmount = new List<int>();
     public List<string> inventoryItemsName = new List<string>();
+
 }
 public class GameData : MonoBehaviour
 {
     public SaveData saveData;
     public static GameData instance;
+    public SaverController saver;
 
     private void Awake()
     {
@@ -36,11 +38,13 @@ public class GameData : MonoBehaviour
             Time.timeScale = 1f;
             if (File.Exists(Application.persistentDataPath + "/playerInventory.dat"))
             {
-                Load();
+                // Load();
+                saver.CargarDatos();
             }
             else
             {
-                Save();
+                // Save();
+                saver.GuardarDatos();
             }
         }
         else

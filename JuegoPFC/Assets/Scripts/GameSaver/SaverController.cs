@@ -44,7 +44,8 @@ public class SaverController : MonoBehaviour
     {
         Debug.Log("primera vez");
         PlayerData playerData = SaveManager.LoadPlayerData();
-        player.transform.position = new Vector3(playerData.position[0], playerData.position[1]);
+        Debug.Log(playerData.position[0] + " " + playerData.position[1]);
+        player.transform.position = new Vector3(playerData.position[0], playerData.position[1], 0);
 
         player.GetComponent<PlayerStats>().health = playerData.health;
         player.GetComponent<PlayerStats>().maxHealth = playerData.maxHealth;

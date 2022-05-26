@@ -29,20 +29,28 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        try
+        if (ShouldLoadInventary.shouldLoadInventory)
         {
             player = GameObject.FindGameObjectWithTag("Player");
-            player.transform.position = playerSpawnPoint.position;
-            playerAnimator = player.GetComponent<Animator>();
-
         }
-        catch (System.Exception)
+        else
         {
-            if (player == null)
+            try
             {
-                player = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
+                player = GameObject.FindGameObjectWithTag("Player");
+                player.transform.position = playerSpawnPoint.position;
+                playerAnimator = player.GetComponent<Animator>();
+
+            }
+            catch (System.Exception)
+            {
+                if (player == null)
+                {
+                    player = Instantiate(playerPrefab, playerSpawnPoint.position, Quaternion.identity);
+                }
             }
         }
+
     }
 
 
