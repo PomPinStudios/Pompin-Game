@@ -139,6 +139,7 @@ public class AimShootBow : MonoBehaviour
                 GameObject shootArrow = Instantiate(arrow, transform.position, Quaternion.identity);
                 shootArrow.GetComponent<Rigidbody2D>().velocity = shootingDirection * shootForce * 2;
                 shootArrow.transform.Rotate(0.0f, 0.0f, Mathf.Atan2(shootingDirection.y, shootingDirection.x) * Mathf.Rad2Deg);
+                shootArrow.GetComponent<ArrowController>().arrowDamage = shootArrow.GetComponent<ArrowController>().arrowDamage + shootForce;
                 Destroy(shootArrow, 10.0f);
 
                 playerArrows -= 1;

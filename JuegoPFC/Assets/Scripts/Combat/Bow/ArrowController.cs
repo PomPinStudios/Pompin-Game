@@ -11,6 +11,7 @@ public class ArrowController : MonoBehaviour
     private float crossHairX;
     private bool hasHit, isPositive, touchingArrow;
     private Text arrowCountText;
+    public float arrowDamage = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -118,7 +119,8 @@ public class ArrowController : MonoBehaviour
             GameObject attackedObject = other.gameObject;
             if (attackedObject.tag == "Enemy" || other.gameObject.tag == "RangedEnemy")
             {
-                attackedObject.GetComponent<EnemyStats>().takeDamage(25);
+                Debug.Log(arrowDamage);
+                attackedObject.GetComponent<EnemyStats>().takeDamage(arrowDamage);
             }
             Destroy(gameObject);
         }
