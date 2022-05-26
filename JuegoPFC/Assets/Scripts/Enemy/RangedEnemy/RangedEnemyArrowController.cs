@@ -49,29 +49,29 @@ public class RangedEnemyArrowController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "RangedEnemy")
+        if (other.gameObject.tag != "RangedEnemy")
         {
-            Debug.Log(other.gameObject.tag);
-            other.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            // Debug.Log(other.gameObject.tag);
+            // other.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            if (other.gameObject.tag == "Player")
+            {
+                GameObject attackedObject = other.gameObject;
+                if (attackedObject.tag == "Player")
+                {
+                    attackedObject.GetComponent<PlayerStats>().UpdateHealth(-20);
+                }
+                Destroy(gameObject);
+            }
+            else
+            {
+                hasHit = true;
+                rb.velocity = Vector2.zero;
+                rb.isKinematic = true;
+                rb.freezeRotation = true;
+                Destroy(gameObject, 15f);
+            }
         }
 
-        if (other.gameObject.tag == "Player")
-        {
-            GameObject attackedObject = other.gameObject;
-            if (attackedObject.tag == "Player")
-            {
-                attackedObject.GetComponent<PlayerStats>().UpdateHealth(-20);
-            }
-            Destroy(gameObject);
-        }
-        else
-        {
-            hasHit = true;
-            rb.velocity = Vector2.zero;
-            rb.isKinematic = true;
-            rb.freezeRotation = true;
-            Destroy(gameObject, 15f);
-        }
 
     }
 }

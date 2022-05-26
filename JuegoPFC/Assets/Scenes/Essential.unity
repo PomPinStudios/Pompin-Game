@@ -6475,7 +6475,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470404683}
   m_CullTransparentMesh: 1
---- !u!43 &1672965938
+--- !u!43 &1631861355
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7443,8 +7443,8 @@ MonoBehaviour:
   - {x: -0.2745285, y: -0.8725052, z: 0}
   - {x: -0.37517548, y: -0.9582062, z: 0}
   m_ShapePathHash: 446359581
-  m_Mesh: {fileID: 1672965938}
-  m_InstanceId: 44018
+  m_Mesh: {fileID: 1631861355}
+  m_InstanceId: 43508
 --- !u!114 &1731248200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9144,7 +9144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4281449096010639282, guid: b91a1b371bcc9b24f89c98709c51e609, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716914503944353417, guid: b91a1b371bcc9b24f89c98709c51e609, type: 3}
       propertyPath: m_Sprite
