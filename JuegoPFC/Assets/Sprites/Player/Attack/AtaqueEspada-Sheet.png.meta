@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 8f59256a9fd9b954cab718272a7699e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3828544849024197472
+    second: AtaqueEspada-Sheet_0
+  - first:
+      213: -4286225809591453888
+    second: AtaqueEspada-Sheet_1
+  - first:
+      213: -803425093579031549
+    second: AtaqueEspada-Sheet_2
+  - first:
+      213: 8849281707899498908
+    second: AtaqueEspada-Sheet_3
+  - first:
+      213: -279502670474176441
+    second: AtaqueEspada-Sheet_4
+  - first:
+      213: -5082263068132321593
+    second: AtaqueEspada-Sheet_5
+  - first:
+      213: -6829138216978934879
+    second: AtaqueEspada-Sheet_6
+  - first:
+      213: 2156390258859434869
+    second: AtaqueEspada-Sheet_7
+  - first:
+      213: -2182796252376199214
+    second: AtaqueEspada-Sheet_8
+  - first:
+      213: -488307829478930672
+    second: AtaqueEspada-Sheet_9
+  - first:
+      213: -287273630369884572
+    second: AtaqueEspada-Sheet_10
+  - first:
+      213: 8813400633827935046
+    second: AtaqueEspada-Sheet_11
+  - first:
+      213: 2615652784460112686
+    second: AtaqueEspada-Sheet_12
+  - first:
+      213: 6777944252133988040
+    second: AtaqueEspada-Sheet_13
+  - first:
+      213: -2677784520433693690
+    second: AtaqueEspada-Sheet_14
+  - first:
+      213: -7838124472000058346
+    second: AtaqueEspada-Sheet_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 144
+        width: 22
+        height: 30
+      alignment: 9
+      pivot: {x: 0.272, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acd24b8eb64edac0800000000000000
+      internalID: -3828544849024197472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 141
+        width: 21
+        height: 33
+      alignment: 9
+      pivot: {x: 0.2856, y: 0.54545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b038e5544484c0800000000000000
+      internalID: -4286225809591453888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 140
+        width: 17
+        height: 34
+      alignment: 9
+      pivot: {x: 0.354, y: 0.558824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c36955229a9d4f0800000000000000
+      internalID: -803425093579031549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 142
+        width: 22
+        height: 32
+      alignment: 9
+      pivot: {x: 0.545, y: 0.53125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9136bce3d6feca70800000000000000
+      internalID: 8849281707899498908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 96
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.27852175, y: 0.51594496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7481d945dc10f1cf0800000000000000
+      internalID: -279502670474176441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 96
+        width: 21
+        height: 31
+      alignment: 9
+      pivot: {x: 0.23904765, y: 0.51548374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6d2e0aaac2879b0800000000000000
+      internalID: -5082263068132321593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 96
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.20916653, y: 0.51677406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a31de659f60a31a0800000000000000
+      internalID: -6829138216978934879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 96
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: 0.24, y: 0.5167738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573ed60f3890ded10800000000000000
+      internalID: 2156390258859434869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 48
+        width: 18
+        height: 31
+      alignment: 9
+      pivot: {x: 0.7216785, y: 0.5163121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df00189f5625b1e0800000000000000
+      internalID: -2182796252376199214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 21
+        height: 31
+      alignment: 9
+      pivot: {x: 0.76095235, y: 0.51548386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017cdd2cd9e2939f0800000000000000
+      internalID: -488307829478930672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 48
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.7916667, y: 0.51677406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466577cb726630cf0800000000000000
+      internalID: -287273630369884572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 48
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: 0.76, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643448a5e2d7f4a70800000000000000
+      internalID: 8813400633827935046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 25
+        height: 29
+      alignment: 9
+      pivot: {x: 0.2376104, y: 0.48078635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23a181695aac4420800000000000000
+      internalID: 2615652784460112686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.31471172, y: 0.48078635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6d8dfd268101e50800000000000000
+      internalID: 6777944252133988040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 17
+        height: 30
+      alignment: 9
+      pivot: {x: 0.3510163, y: 0.50084436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c828a8a2996dad0800000000000000
+      internalID: -2677784520433693690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtaqueEspada-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ce3252253693390800000000000000
+      internalID: -7838124472000058346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

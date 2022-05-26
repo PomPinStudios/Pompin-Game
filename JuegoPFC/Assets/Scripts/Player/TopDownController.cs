@@ -60,8 +60,8 @@ public class TopDownController : MonoBehaviour
         //Attack
         if (Input.GetButtonDown("Fire1"))
         {
-
-            animator.SetBool("Attacking", true);
+            animator.SetTrigger("Attack");
+            //animator.SetBool("Attacking", true);
         }
     }
 
