@@ -20,6 +20,7 @@ public class SwordUnlocker : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         EventManager.Instance.QueueEvent(new ObjectsGameEvent("Espada"));
+        AttackUnlocker.isUnlocked = true;
     }
 
 }

@@ -58,7 +58,7 @@ public class WeaponScript : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && AttackUnlocker.isUnlocked)
         {
             if (currentWeapon.tag != "Aim")
             {

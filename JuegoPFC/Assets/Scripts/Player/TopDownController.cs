@@ -60,7 +60,7 @@ public class TopDownController : MonoBehaviour
         }
 
         //Attack
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && AttackUnlocker.isUnlocked)
         {
             //animator.SetTrigger("Attack");
             animator.SetBool("Attacking", true);

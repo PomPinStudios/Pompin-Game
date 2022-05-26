@@ -178,7 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tipo: Llave
   Nombre: LLave de Mazmorra
-  Descripcion: Abre algo
+  Descripcion: Hay una antigua leyenda que cuenta como la fuente del pueblo separa
+    Tierra e Infierno
   TextTipo: {fileID: 0}
   TextNombre: {fileID: 0}
   TextDescripcion: {fileID: 0}
