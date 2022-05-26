@@ -32,6 +32,8 @@ public class PlayerStats : MonoBehaviour
 
     public AudioSource clip;
 
+    public GameObject muerte;
+
     private void Start()
     {
         health = maxHealth;
@@ -60,6 +62,7 @@ public class PlayerStats : MonoBehaviour
             healthText.text = "0 / 100";
             Destroy(gameObject);
             Debug.Log("Tas muerto");
+            muerte.SetActive(true);
         }
     }
 

@@ -45,6 +45,7 @@ public class GameData : MonoBehaviour
         }
         else
         {
+            Time.timeScale = 1f;
             Save();
         }
 

@@ -38,6 +38,8 @@ public class TopDownController : MonoBehaviour
 
         playerSingleton = PlayerSingleton.instance;
         playerStats = playerSingleton.GetComponent<PlayerStats>();
+
+        animator.SetBool("Bowing", true);
     }
 
     // Update is called once per frame

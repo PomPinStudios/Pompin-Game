@@ -12,6 +12,8 @@ public class WeaponScript : MonoBehaviour
     public GameObject canvas;
 
     public AudioSource clip;
+
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +45,13 @@ public class WeaponScript : MonoBehaviour
                 currentWeapon = weapons[currentWeaponIndex];
                 if (currentWeapon.tag == "Aim")
                 {
+                    animator.SetBool("Bowing", true);
                     this.GetComponent<AimShootBow>().enabled = true;
                     canvas.SetActive(true);
                 }
                 else
                 {
+                    animator.SetBool("Bowing", false);
                     this.GetComponent<AimShootBow>().enabled = false;
                     canvas.SetActive(false);
                 }
@@ -72,11 +76,13 @@ public class WeaponScript : MonoBehaviour
                 currentWeapon = weapons[currentWeaponIndex];
                 if (currentWeapon.tag == "Aim")
                 {
+                    animator.SetBool("Bowing", true);
                     this.GetComponent<AimShootBow>().enabled = true;
                     canvas.SetActive(true);
                 }
                 else
                 {
+                    animator.SetBool("Bowing", false);
                     this.GetComponent<AimShootBow>().enabled = false;
                     canvas.SetActive(false);
                 }
